@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+    <defs>
+        <linearGradient id="mmdcv6o45a" x1="0%" x2="100%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#B48AE7"/>
+            <stop offset="100%" stop-color="#F68284"/>
+        </linearGradient>
+        <linearGradient id="wcmeyr8pdb" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#635CFF"/>
+            <stop offset="100%" stop-color="#B48AE7"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="url(#mmdcv6o45a)" d="M32 4.828V28c0 2.21-1.79 4-4 4H4.828c-1.104 0-2-.895-2-2 0-.53.211-1.04.586-1.414L28.586 3.414c.78-.78 2.047-.78 2.828 0 .375.375.586.884.586 1.414z" transform="translate(-1030 -1297) translate(180 1297) translate(850)"/>
+                    <path fill="url(#wcmeyr8pdb)" d="M40 15.414V26.5c0 1.38-1.12 2.5-2.5 2.5H26.414c-.552 0-1-.448-1-1 0-.265.106-.52.293-.707l12.586-12.586c.39-.39 1.024-.39 1.414 0 .188.188.293.442.293.707z" style="mix-blend-mode:multiply" transform="translate(-1030 -1297) translate(180 1297) translate(850) matrix(1 0 0 -1 0 42)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

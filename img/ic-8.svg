@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <linearGradient id="kl0rks3t9a" x1="14.201%" x2="85.799%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#B48AE7"/>
+            <stop offset="100%" stop-color="#F68284"/>
+        </linearGradient>
+        <linearGradient id="hcnjjs59wb" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#635CFF"/>
+            <stop offset="100%" stop-color="#B48AE7"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-1030 -1761) translate(180 1759) translate(850 2)">
+                    <rect width="22" height="26" fill="url(#kl0rks3t9a)" rx="4"/>
+                    <rect fill="url(#hcnjjs59wb)" style="mix-blend-mode:multiply" width="22" height="26" x="16" y="12" rx="4"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

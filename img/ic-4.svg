@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="38" viewBox="0 0 40 38">
+    <defs>
+        <linearGradient id="kpoaalsela" x1="0%" x2="100%" y1="73.407%" y2="26.593%">
+            <stop offset="0%" stop-color="#B48AE7"/>
+            <stop offset="100%" stop-color="#F68284"/>
+        </linearGradient>
+        <linearGradient id="p7kcecvddb" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#635CFF"/>
+            <stop offset="100%" stop-color="#B48AE7"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="#FFF" d="M28.211 7.657L43.676 28.82c.652.892.457 2.143-.435 2.795-.342.25-.755.385-1.18.385H11.94c-1.105 0-2-.895-2-2 0-.424.135-.838.385-1.18L25.789 7.657c.489-.669 1.427-.815 2.096-.326.125.091.235.201.326.326z" transform="translate(-1030 -1322) translate(180 1320) translate(850 2) rotate(90 27 19)"/>
+                    <path fill="url(#kpoaalsela)" d="M14.211 7.657L29.676 28.82c.652.892.457 2.143-.435 2.795-.342.25-.755.385-1.18.385H-2.06c-1.105 0-2-.895-2-2 0-.424.135-.838.385-1.18L11.789 7.657c.489-.669 1.427-.815 2.096-.326.125.091.235.201.326.326z" transform="translate(-1030 -1322) translate(180 1320) translate(850 2) rotate(90 13 19)"/>
+                    <path fill="url(#p7kcecvddb)" d="M28.211 7.657L43.676 28.82c.652.892.457 2.143-.435 2.795-.342.25-.755.385-1.18.385H11.94c-1.105 0-2-.895-2-2 0-.424.135-.838.385-1.18L25.789 7.657c.489-.669 1.427-.815 2.096-.326.125.091.235.201.326.326z" style="mix-blend-mode:multiply" transform="translate(-1030 -1322) translate(180 1320) translate(850 2) rotate(90 27 19)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

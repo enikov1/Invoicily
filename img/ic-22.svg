@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <linearGradient id="earw6bvoyc" x1="0%" x2="100%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#B48AE7"/>
+            <stop offset="100%" stop-color="#F68284"/>
+        </linearGradient>
+        <linearGradient id="whw5finwwd" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#635CFF"/>
+            <stop offset="100%" stop-color="#B48AE7"/>
+        </linearGradient>
+        <rect id="niwtwgutta" width="38" height="38" x="0" y="0" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-180 -963) translate(180 963)">
+                <mask id="bimwt5m6mb" fill="#fff">
+                    <use xlink:href="#niwtwgutta"/>
+                </mask>
+                <path fill="#FFF" d="M14.125 28.277l9.727-19.032c.503-.983 1.708-1.373 2.691-.87.137.07.265.155.382.254L38 18v20H0l12.337-7.768c.761-.48 1.379-1.155 1.788-1.955z" mask="url(#bimwt5m6mb)"/>
+                <path fill="url(#earw6bvoyc)" d="M14.354 20.8l6.698 1.875c1.74.487 3.59-.253 4.515-1.805L36.14 3.12c.283-.474.896-.63 1.37-.347.304.18.489.507.489.86V38H0l9.904-15.503c.948-1.483 2.755-2.173 4.45-1.698z" mask="url(#bimwt5m6mb)"/>
+                <path fill="url(#whw5finwwd)" d="M14.125 28.277l9.727-19.032c.503-.983 1.708-1.373 2.691-.87.137.07.265.155.382.254L38 18v20H0l12.337-7.768c.761-.48 1.379-1.155 1.788-1.955z" style="mix-blend-mode:multiply" mask="url(#bimwt5m6mb)"/>
+            </g>
+        </g>
+    </g>
+</svg>
