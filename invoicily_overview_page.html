@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Invoicily Overview Page</title>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
@@ -10,7 +10,7 @@
   <body>
     <header class="header" id="header_overview">
       <div class="header__top">
-        <div class="container"><a class="header__top-logo" href="/"><img src="./img/logo-header.png" alt="logo"></a>
+        <div class="container"><a class="header__top-logo" href="/" data-aos="fade-in" data-aos-delay="200"><img src="./img/logo-header.png" alt="logo"></a>
           <nav class="header__top-nav">
             <ul>
               <li data-aos="fade-left" data-aos-delay="100"><a class="dropmenu-toggle" href="#">Features<i class="icon-ic-drop-down"></i></a>
@@ -40,15 +40,16 @@
       </div>
       <div class="header__bottom">
         <div class="header__bottom-left">
-          <h1 data-aos="fade-right" data-aos-delay="50">Manage your business every step of the way</h1>
-          <p class="descr" data-aos="fade-right" data-aos-delay="150">Simple tools to run your business your way </p><a class="button-default p-2" href="#" data-aos="zoom-in-right" data-aos-delay="200">Try for free<i class="icon-ic-next"></i></a>
-          <p class="info" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">By clicking the button above, I agree to the <a href="#">terms of service</a> and <a href="#">privacy policy</a>.</p>
+          <h1 data-aos="fade-in" data-aos-delay="300">Manage your business every step of the way</h1>
+          <p class="descr" data-aos="fade-in" data-aos-delay="300">Simple tools to run your business your way </p>
+          <div data-aos="fade-in" data-aos-delay="300"><a class="button-default p-2" href="#">Try for free<i class="icon-ic-next"></i></a></div>
+          <p class="info" data-aos="fade-in" data-aos-anchor-placement="center-bottom" data-aos-delay="300">By clicking the button above, I agree to the <a href="#">terms of service</a> and <a href="#">privacy policy</a>.</p>
           <ul class="approve-list">
             <li data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">Money back guarantee</li>
             <li data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200">No commitment, cancel anytime</li>
           </ul>
         </div>
-        <div class="header__bottom-right"><img src="./img/safari.png" alt="image" data-aos="zoom-in-left" data-aos-delay="100"><img src="./img/i-phone.png" alt="image" data-aos="zoom-in-left" data-aos-delay="200"></div>
+        <div class="header__bottom-right"><img src="./img/safari.png" alt="image" data-aos="zoom-in-up" data-aos-delay="400"><img src="./img/i-phone.png" alt="image" data-aos="zoom-in-up" data-aos-delay="400"></div>
       </div>
     </header>
     <div class="group_list">
@@ -219,6 +220,27 @@
         </div>
       </div>
     </footer>
+    <div class="menu_mobile">
+      <ul>
+        <li><span>Features</span>
+          <ul class="dropmenu">
+            <li> <a href="#">Overview</a></li>
+            <li> <a href="#">Send Invoice</a></li>
+            <li> <a href="#">Accept Payment</a></li>
+            <li> <a href="#">Estimate</a></li>
+            <li> <a href="#">Business Reporting</a></li>
+          </ul>
+        </li>
+        <li><span>Resources</span>
+          <ul class="dropmenu">
+            <li>	<a href="#">How to Create an Invoice </a></li>
+            <li>	<a href="#">Business Types</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div class="menu_mobile__bottom"><a class="first" href="#">Login</a><a class="button-default" href="#">Register<i class="icon-ic-next"></i></a></div>
+    </div>
     <script src="./libs/aos/aos.js" defer></script>
     <script src="./js/common.js" defer></script>
   </body>

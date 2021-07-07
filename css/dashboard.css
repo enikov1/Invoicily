@@ -399,48 +399,32 @@ body {
   margin-right: 0.875rem;
 }
 
-.aside__nav ul li [data-item="home"] .ic {
-  width: 0.8125rem;
-  height: 0.8125rem;
-  background: url(../img/dashboard/icHome.svg) no-repeat center center;
-  background-size: 100%;
+.aside__nav ul li [data-item="home"]:hover .ic .ic_path_1 {
+  fill: #ADAAFD !important;
 }
 
-.aside__nav ul li [data-item="home"]:hover .ic {
-  background: url(../img/dashboard/icHomeActive.svg) no-repeat center center;
+.aside__nav ul li [data-item="home"]:hover .ic .ic_path_2 {
+  fill: #ADAAFD !important;
 }
 
-.aside__nav ul li [data-item="customers"] .ic {
-  width: 1rem;
-  height: 1rem;
-  background: url(../img/dashboard/icCustomers.svg) no-repeat center center;
-  background-size: 100%;
+.aside__nav ul li [data-item="customers"]:hover .ic #ic1_1 {
+  fill: var(--cornflower) !important;
 }
 
-.aside__nav ul li [data-item="customers"]:hover .ic {
-  background: url(../img/dashboard/icCustomersActive.svg) no-repeat center center !important;
+.aside__nav ul li [data-item="billing"]:hover .ic .ic_path_1 {
+  fill: #ADAAFD !important;
 }
 
-.aside__nav ul li [data-item="billing"] .ic {
-  width: 1rem;
-  height: 0.75rem;
-  background: url(../img/dashboard/icBilling.svg) no-repeat center center;
-  background-size: 100%;
+.aside__nav ul li [data-item="billing"]:hover .ic .ic_path_2 {
+  fill: var(--cornflower) !important;
 }
 
-.aside__nav ul li [data-item="billing"]:hover .ic {
-  background: url(../img/dashboard/icBillingActive.svg) no-repeat center center;
+.aside__nav ul li [data-item="coupons"]:hover .ic .ic_path_1 {
+  fill: var(--cornflower);
 }
 
-.aside__nav ul li [data-item="coupons"] .ic {
-  width: 0.875rem;
-  height: 0.5rem;
-  background: url(../img/dashboard/icCoupons.svg) no-repeat center center;
-  background-size: 100%;
-}
-
-.aside__nav ul li [data-item="coupons"]:hover .ic {
-  background: url(../img/dashboard/icCouponsActive.svg) no-repeat center center;
+.aside__nav ul li [data-item="coupons"]:hover .ic .ic_path_2 {
+  fill: #ADAAFD;
 }
 
 .aside__nav ul li [data-item="taxes"] .ic {
@@ -487,37 +471,24 @@ body {
   background-color: var(--cornflower);
 }
 
-.aside__nav ul li [data-item="reports"] .ic {
-  width: 1rem;
-  height: 1rem;
-  background: url(../img/dashboard/icReports.svg) no-repeat center center;
-  background-size: 100%;
+.aside__nav ul li [data-item="reports"]:hover .ic .ic_path_1 {
+  fill: #ADAAFD;
 }
 
-.aside__nav ul li [data-item="reports"]:hover .ic {
-  background: url(../img/dashboard/icReportsActive.svg) no-repeat center center;
+.aside__nav ul li [data-item="reports"]:hover .ic .ic_path_2 {
+  fill: var(--cornflower);
 }
 
-.aside__nav ul li [data-item="settings"] .ic {
-  width: 0.875rem;
-  height: 0.875rem;
-  background: url(../img/dashboard/icSettings.svg) no-repeat center center;
-  background-size: 100%;
+.aside__nav ul li [data-item="settings"]:hover .ic .ic_path_1 {
+  fill: var(--cornflower);
 }
 
-.aside__nav ul li [data-item="settings"]:hover .ic {
-  background: url(../img/dashboard/icSettingsActive.svg) no-repeat center center;
+.aside__nav ul li [data-item="account"]:hover .ic .ic_path_1 {
+  fill: #ADAAFD;
 }
 
-.aside__nav ul li [data-item="account"] .ic {
-  width: 0.875rem;
-  height: 0.875rem;
-  background: url(../img/dashboard/icAccount.svg) no-repeat center center;
-  background-size: 100%;
-}
-
-.aside__nav ul li [data-item="account"]:hover .ic {
-  background: url(../img/dashboard/icAccountActive.svg) no-repeat center center;
+.aside__nav ul li [data-item="account"]:hover .ic .ic_path_2 {
+  fill: var(--cornflower);
 }
 
 .aside__nav ul li.active a {
@@ -525,40 +496,88 @@ body {
   text-shadow: 0 0 0.65px var(--cornflower), 0 0 0.65px var(--cornflower);
 }
 
-.aside__nav ul li.active [data-item="home"] .ic {
-  background: url(../img/dashboard/icHomeActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="home"] .ic .ic_path_1 {
+  fill: #ADAAFD !important;
 }
 
-.aside__nav ul li.active [data-item="customers"] .ic {
-  background: url(../img/dashboard/icCustomersActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="home"] .ic .ic_path_2 {
+  fill: #ADAAFD !important;
 }
 
-.aside__nav ul li.active [data-item="billing"] .ic {
-  background: url(../img/dashboard/icBillingActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="customers"] .ic #ic1_1 {
+  fill: var(--cornflower) !important;
 }
 
-.aside__nav ul li.active [data-item="coupons"] .ic {
-  background: url(../img/dashboard/icCouponsActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="billing"] .ic .ic_path_1 {
+  fill: #ADAAFD !important;
+}
+
+.aside__nav ul li.active [data-item="billing"] .ic .ic_path_2 {
+  fill: var(--cornflower) !important;
+}
+
+.aside__nav ul li.active [data-item="coupons"] .ic .ic_path_1 {
+  fill: var(--cornflower);
+}
+
+.aside__nav ul li.active [data-item="coupons"] .ic .ic_path_2 {
+  fill: #ADAAFD;
+}
+
+.aside__nav ul li.active [data-item="taxes"] .ic {
+  position: relative;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
 .aside__nav ul li.active [data-item="taxes"] .ic::before, .aside__nav ul li.active [data-item="taxes"] .ic::after {
-  border-color: var(--cornflower);
+  content: "";
+  position: absolute;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  border: solid 0.09375rem #a4acba;
+}
+
+.aside__nav ul li.active [data-item="taxes"] .ic::before {
+  top: 0;
+  left: 0;
+}
+
+.aside__nav ul li.active [data-item="taxes"] .ic::after {
+  right: 0;
+  bottom: 0;
 }
 
 .aside__nav ul li.active [data-item="taxes"] .ic span {
-  background-color: var(--cornflower);
+  position: absolute;
+  left: 0.4375rem;
+  width: 0.125rem;
+  height: 0.875rem;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #50576b;
 }
 
-.aside__nav ul li.active [data-item="reports"] .ic {
-  background: url(../img/dashboard/icReportsActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="reports"] .ic .ic_path_1 {
+  fill: #ADAAFD;
 }
 
-.aside__nav ul li.active [data-item="settings"] .ic {
-  background: url(../img/dashboard/icSettingsActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="reports"] .ic .ic_path_2 {
+  fill: var(--cornflower);
 }
 
-.aside__nav ul li.active [data-item="account"] .ic {
-  background: url(../img/dashboard/icAccountActive.svg) no-repeat center center;
+.aside__nav ul li.active [data-item="settings"] .ic .ic_path_1 {
+  fill: var(--cornflower);
+}
+
+.aside__nav ul li.active [data-item="account"] .ic .ic_path_1 {
+  fill: #ADAAFD;
+}
+
+.aside__nav ul li.active [data-item="account"] .ic .ic_path_2 {
+  fill: var(--cornflower);
 }
 
 .header {

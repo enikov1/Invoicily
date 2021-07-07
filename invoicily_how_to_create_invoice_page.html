@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Invoicily How to Create Invoice Page</title>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
@@ -10,7 +10,7 @@
   <body>
     <header class="header how_to_create_invoice">
       <div class="header__top">
-        <div class="container"><a class="header__top-logo" href="/"><img src="./img/logo-header.png" alt="logo"></a>
+        <div class="container"><a class="header__top-logo" href="/" data-aos="fade-in" data-aos-delay="200"><img src="./img/logo-header.png" alt="logo"></a>
           <nav class="header__top-nav">
             <ul>
               <li data-aos="fade-left" data-aos-delay="100"><a class="dropmenu-toggle" href="#">Features<i class="icon-ic-drop-down"></i></a>
@@ -40,10 +40,11 @@
       </div>
       <div class="header__bottom header__bottom_static">
         <div class="header__bottom-left">
-          <h1 data-aos="fade-right" data-aos-delay="50">How to Create a Professional Invoice</h1>
-          <p class="descr" data-aos="fade-right" data-aos-delay="150">This invoice template guide will discuss everything you need to know to create the most effective invoices to get you paid faster. Download our app now for free and start sending professional invoices within minutes.</p><a class="button-default p-2" href="#" data-aos="zoom-in-right" data-aos-delay="200">Create your invoice<i class="icon-ic-next"></i></a>
+          <h1 data-aos="fade-in" data-aos-delay="300">How to Create a Professional Invoice</h1>
+          <p class="descr" data-aos="fade-in" data-aos-delay="300">This invoice template guide will discuss everything you need to know to create the most effective invoices to get you paid faster. Download our app now for free and start sending professional invoices within minutes.</p>
+          <div data-aos="fade-in" data-aos-delay="300"><a class="button-default p-2" href="#">Create your invoice<i class="icon-ic-next"></i></a></div>
         </div>
-        <div class="header__bottom-right"><img class="static" src="./img/tab.png" alt="image" data-aos="zoom-in-left" data-aos-delay="100"></div>
+        <div class="header__bottom-right"><img class="static" src="./img/tab.png" alt="image" data-aos="zoom-in-up" data-aos-delay="400"></div>
       </div>
     </header>
     <section class="what_is_an_invoice">
@@ -250,7 +251,7 @@
                 <div class="item" data-aos="zoom-out-left"><img src="./img/ic-17.svg" alt="image"><b>Online invoicing</b></div>
               </div>
               <div class="tile_col_block__wrap">
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Average days to payment">
                   <div class="item item-bs" data-aos="zoom-out-right"><b>23 days</b></div>
                   <div class="item item-center" data-aos="zoom-out-left">
                     <div class="flex flex-col"><b>16 days</b>
@@ -258,7 +259,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Cost">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <p>Paper, ink and postage. Time to print and mail an invoice. Time to review and correct data entry errors. Time to chase clients and confirm receipt.</p>
                   </div>
@@ -266,21 +267,21 @@
                     <p>Invoice and Receipt plans start as low as undefined $99,00/month</p>
                   </div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Delivery time">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <p>1-3 business days or longer, as determined by your mail carrier</p>
                   </div>
                   <div class="item item-center" data-aos="zoom-out-left"><b>Immediate</b></div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Invoice status tracking">
                   <div class="item item-center" data-aos="zoom-out-right"><img src="./img/times-circle-solid.svg" alt="image"></div>
                   <div class="item item-center" data-aos="zoom-out-left"><img src="./img/check-circle-solid.svg" alt="image"></div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Automatic payment reminders">
                   <div class="item item-center" data-aos="zoom-out-right"><img src="./img/times-circle-solid.svg" alt="image"></div>
                   <div class="item item-center" data-aos="zoom-out-left"><img src="./img/check-circle-solid.svg" alt="image"></div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Data storage">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <p>File cabinet</p>
                   </div>
@@ -288,7 +289,7 @@
                     <p>Always backed up to the cloud, accessible from any device</p>
                   </div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Mobility &amp; flexibility">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <div class="flex flex-col"><b>Low</b>
                       <p>invoicing typically done back at the office</p>
@@ -300,7 +301,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Environmental impact">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <div class="flex flex-col"><b>High</b>
                       <p>trees used for paper, and carbon emissions from postage</p>
@@ -368,6 +369,27 @@
         </div>
       </div>
     </footer>
+    <div class="menu_mobile">
+      <ul>
+        <li><span>Features</span>
+          <ul class="dropmenu">
+            <li> <a href="#">Overview</a></li>
+            <li> <a href="#">Send Invoice</a></li>
+            <li> <a href="#">Accept Payment</a></li>
+            <li> <a href="#">Estimate</a></li>
+            <li> <a href="#">Business Reporting</a></li>
+          </ul>
+        </li>
+        <li><span>Resources</span>
+          <ul class="dropmenu">
+            <li>	<a href="#">How to Create an Invoice </a></li>
+            <li>	<a href="#">Business Types</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div class="menu_mobile__bottom"><a class="first" href="#">Login</a><a class="button-default" href="#">Register<i class="icon-ic-next"></i></a></div>
+    </div>
     <script src="./libs/aos/aos.js" defer></script>
     <script src="./js/common.js" defer></script>
   </body>

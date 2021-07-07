@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Invoicily Pricing Page</title>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__top">
-        <div class="container"><a class="header__top-logo" href="/"><img src="./img/logo-header.png" alt="logo"></a>
+        <div class="container"><a class="header__top-logo" href="/" data-aos="fade-in" data-aos-delay="200"><img src="./img/logo-header.png" alt="logo"></a>
           <nav class="header__top-nav">
             <ul>
               <li data-aos="fade-left" data-aos-delay="100"><a class="dropmenu-toggle" href="#">Features<i class="icon-ic-drop-down"></i></a>
@@ -41,8 +41,8 @@
       <div class="header__bottom header__bottom-col">
         <div class="container">
           <div class="header__bottom-col__text">
-            <h1 data-aos="fade-right" data-aos-delay="50">Grow your recurring revenue</h1>
-            <p class="descr" data-aos="fade-right" data-aos-delay="150">Start your 30-day free trial today. Cancel anytime.</p>
+            <h1 data-aos="fade-in" data-aos-delay="300">Grow your recurring revenue</h1>
+            <p class="descr" data-aos="fade-in" data-aos-delay="300">Start your 30-day free trial today. Cancel anytime.</p>
           </div>
           <div class="header__bottom-col__items">
             <div class="item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
@@ -104,7 +104,7 @@
                 <div class="item" data-aos="zoom-out-left"><b>Scale</b></div>
               </div>
               <div class="tile_col_block__wrap">
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Recurring billing">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <div class="flex flex-col"><b>0.5%</b>
                       <p>on recurring charges</p>
@@ -116,21 +116,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="One-off billing">
                   <div class="item item-center" data-aos="zoom-out-right"><img src="./img/check-circle-solid.svg" alt="image"></div>
                   <div class="item item-center" data-aos="zoom-out-left"><img src="./img/check-circle-solid.svg" alt="image"></div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Customer portal">
                   <div class="item item-center" data-aos="zoom-out-right"><img src="./img/check-circle-solid.svg" alt="image"></div>
                   <div class="item item-center" data-aos="zoom-out-left"><img src="./img/check-circle-solid.svg" alt="image"></div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Connector for NetSuite">
                   <div class="item item-center" data-aos="zoom-out-right"><img src="./img/times-circle-solid.svg" alt="image"></div>
                   <div class="item item-center flex-col" data-aos="zoom-out-left"><img src="./img/check-circle-solid.svg" alt="image">
                     <p>requires implementation fee</p>
                   </div>
                 </div>
-                <div class="tile_col_block__row">
+                <div class="tile_col_block__row" data-title="Invoice and Receipt Sigma">
                   <div class="item item-center" data-aos="zoom-out-right">
                     <div class="flex flex-col"><b>Sold separately</b>
                       <p>See pricing</p>
@@ -209,6 +209,27 @@
         </div>
       </div>
     </footer>
+    <div class="menu_mobile">
+      <ul>
+        <li><span>Features</span>
+          <ul class="dropmenu">
+            <li> <a href="#">Overview</a></li>
+            <li> <a href="#">Send Invoice</a></li>
+            <li> <a href="#">Accept Payment</a></li>
+            <li> <a href="#">Estimate</a></li>
+            <li> <a href="#">Business Reporting</a></li>
+          </ul>
+        </li>
+        <li><span>Resources</span>
+          <ul class="dropmenu">
+            <li>	<a href="#">How to Create an Invoice </a></li>
+            <li>	<a href="#">Business Types</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div class="menu_mobile__bottom"><a class="first" href="#">Login</a><a class="button-default" href="#">Register<i class="icon-ic-next"></i></a></div>
+    </div>
     <script src="./libs/aos/aos.js" defer></script>
     <script src="./js/common.js" defer></script>
   </body>
