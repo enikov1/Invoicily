@@ -524,40 +524,12 @@ body {
   fill: #ADAAFD;
 }
 
-.aside__nav ul li.active [data-item="taxes"] .ic {
-  position: relative;
-  width: 0.875rem;
-  height: 0.875rem;
+.aside__nav ul li.active [data-item="taxes"]::before, .aside__nav ul li.active [data-item="taxes"]::after {
+  border-color: var(--cornflower);
 }
 
-.aside__nav ul li.active [data-item="taxes"] .ic::before, .aside__nav ul li.active [data-item="taxes"] .ic::after {
-  content: "";
-  position: absolute;
-  width: 0.375rem;
-  height: 0.375rem;
-  border-radius: 50%;
-  border: solid 0.09375rem #a4acba;
-}
-
-.aside__nav ul li.active [data-item="taxes"] .ic::before {
-  top: 0;
-  left: 0;
-}
-
-.aside__nav ul li.active [data-item="taxes"] .ic::after {
-  right: 0;
-  bottom: 0;
-}
-
-.aside__nav ul li.active [data-item="taxes"] .ic span {
-  position: absolute;
-  left: 0.4375rem;
-  width: 0.125rem;
-  height: 0.875rem;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: #50576b;
+.aside__nav ul li.active [data-item="taxes"] span {
+  background-color: var(--cornflower);
 }
 
 .aside__nav ul li.active [data-item="reports"] .ic .ic_path_1 {
