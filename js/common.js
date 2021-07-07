@@ -70,7 +70,11 @@ document.addEventListener("click", closeAllSelect);
 
 'use strict';
 
-AOS.init();
+AOS.init({
+	disable: 'mobile',
+	once: true,
+	duration: 600,
+});
 const siblings = el => [].slice.call(el.parentNode.parentNode.children).filter(child => (child !== el));
 const header_nav_item = document.querySelectorAll('.dropmenu-toggle');
 
@@ -79,6 +83,8 @@ let list = document.querySelectorAll('.header__top-nav > ul > li');
 if(header_nav_item) {
 	header_nav_item.forEach(e => {
 		e.addEventListener('click', (event) => {
+
+			event.preventDefault();
 
 			const parent = event.target.closest('li');
 
@@ -159,3 +165,26 @@ if(language_select) {
 			}
 		});
 }
+
+// burger menu
+
+const burger = document.querySelector('.header__top-burger'),
+	  mobile_menu = document.querySelector('.menu_mobile');
+
+let header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+	if(pageYOffset >= 1) {
+		header.classList.add("header_fixed");
+
+	} else {
+		header.classList.remove("header_fixed");
+	}
+});
+
+
+burger.addEventListener('click', () => {
+	burger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+
