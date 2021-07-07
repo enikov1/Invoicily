@@ -173,13 +173,19 @@ const burger = document.querySelector('.header__top-burger'),
 
 let header = document.querySelector('.header');
 
-window.addEventListener('scroll', () => {
+const header_scroll = () => {
 	if(pageYOffset >= 1) {
 		header.classList.add("header_fixed");
 
 	} else {
 		header.classList.remove("header_fixed");
 	}
+}
+
+header_scroll();
+
+window.addEventListener('scroll', () => {
+	header_scroll();
 });
 
 
