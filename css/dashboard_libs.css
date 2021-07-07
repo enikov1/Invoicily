@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons//icons.woff?iu3l1b") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-approved-signal:before {
+  content: "";
+  color: #635cff;
+}
+
+.icon-ic-fb:before {
+  content: "";
+  color: #425566;
+}
+
+.icon-ic-ln:before {
+  content: "";
+  color: #425566;
+}
+
+.icon-ic-drop-down:before {
+  content: "";
+}
+
+.icon-ic-next:before {
+  content: "";
+}
+
+.icon-ic-tw:before {
+  content: "";
+  color: #425566;
+}

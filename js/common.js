@@ -113,7 +113,7 @@ const menu = document.querySelectorAll('.dropmenu');
 menu.forEach(e => {
 
 	window.addEventListener('click', (event) => {
-        const tg = event.target,
+        let tg = event.target,
             isMenuWrap = tg == e || e.contains(tg);
 
 			if (!isMenuWrap) {
@@ -133,4 +133,29 @@ if(accordion_item) {
 			e.classList.toggle('active');
 		});
 	});
+}
+
+const language_select = document.querySelector('.language_select__list');
+
+if(language_select) {
+	const button_select = language_select.querySelector('.selected');
+	const select_list = language_select.querySelector('.list');
+
+	button_select.addEventListener('click', () => {
+		select_list.classList.toggle('active');
+	});
+
+	
+		window.addEventListener('click', (event) => {
+			if(select_list.classList.contains('active')) {
+				console.log(1);
+				let tg = event.target,
+					its_select = tg == select_list || select_list.contains(tg),
+					its_btnSelect = tg == button_select;
+
+				if (!its_select && !its_btnSelect) {
+					select_list.classList.remove('active');
+				}
+			}
+		});
 }
