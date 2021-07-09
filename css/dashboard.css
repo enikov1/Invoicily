@@ -350,10 +350,10 @@ body {
 @media only screen and (max-width: 1023px) {
   .aside {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 12.5rem;
-        -ms-flex: 0 0 12.5rem;
-            flex: 0 0 12.5rem;
-    max-width: 12.5rem;
+    -webkit-flex: 0 0 13.75rem;
+        -ms-flex: 0 0 13.75rem;
+            flex: 0 0 13.75rem;
+    max-width: 13.75rem;
   }
 }
 
@@ -868,9 +868,6 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1028,6 +1025,9 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
+  .table__rows .row .md-w-5 {
+    width: 5% !important;
+  }
   .table__rows .row .md-w-10 {
     width: 10% !important;
   }
@@ -1078,9 +1078,12 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  .table.table-taxes .col b, .table.table-taxes .col span {
-    font-size: 0.75rem;
-    white-space: normal;
+  .table.table-taxes .table__rows {
+    max-width: 770px;
+    overflow-x: auto;
+  }
+  .table.table-taxes .table__rows .row {
+    min-width: 1170px;
   }
 }
 
