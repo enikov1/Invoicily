@@ -598,12 +598,17 @@ if(percent_mask) {
 const field_percent = document.querySelector('input#radio1');
 const field_fixed = document.querySelector('input#radio2');
 
-field_percent.addEventListener('input', (event) => {
-	document.querySelector('[data-toggle=form_percentage]').classList.remove('hide');
-	document.querySelector('[data-toggle=form_fixed]').classList.add('hide');
-});
+if(field_percent) {
+	field_percent.addEventListener('input', (event) => {
+		document.querySelector('[data-toggle=form_percentage]').classList.remove('hide');
+		document.querySelector('[data-toggle=form_fixed]').classList.add('hide');
+	});
+}
 
-field_fixed.addEventListener('input', (event) => {
-	document.querySelector('[data-toggle=form_percentage]').classList.add('hide');
-	document.querySelector('[data-toggle=form_fixed]').classList.remove('hide');
-});
+if(field_fixed) {
+	field_fixed.addEventListener('input', (event) => {
+		document.querySelector('[data-toggle=form_percentage]').classList.add('hide');
+		document.querySelector('[data-toggle=form_fixed]').classList.remove('hide');
+	});
+}
+

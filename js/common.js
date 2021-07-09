@@ -172,7 +172,6 @@ const burger = document.querySelector('.header__top-burger'),
 	  mobile_menu = document.querySelector('.menu_mobile');
 
 let header = document.querySelector('.header');
-
 const header_scroll = () => {
 	if(pageYOffset >= 1) {
 		header.classList.add("header_fixed");
@@ -182,15 +181,19 @@ const header_scroll = () => {
 	}
 }
 
-header_scroll();
-
-window.addEventListener('scroll', () => {
+if(header) {
 	header_scroll();
-});
 
+	window.addEventListener('scroll', () => {
+		header_scroll();
+	});
+}
 
-burger.addEventListener('click', () => {
-	burger.classList.toggle('active');
-	mobile_menu.classList.toggle('active');
-});
+if(burger) {
+	burger.addEventListener('click', () => {
+		burger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+}
+
 

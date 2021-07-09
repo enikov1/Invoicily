@@ -125,6 +125,12 @@ textarea {
   border: 0;
 }
 
+svg * {
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
 html,
 body {
   position: relative;
@@ -339,6 +345,16 @@ body {
   max-width: var(--w-left-column);
   min-height: 100%;
   border-right: 0.0625rem solid var(--border-color);
+}
+
+@media only screen and (max-width: 1023px) {
+  .aside {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5rem;
+        -ms-flex: 0 0 12.5rem;
+            flex: 0 0 12.5rem;
+    max-width: 12.5rem;
+  }
 }
 
 .aside__header {
@@ -606,6 +622,13 @@ body {
           flex-grow: 1;
 }
 
+@media only screen and (max-width: 1023px) {
+  .header__search {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
 .header__search .field__set {
   display: -webkit-box;
   display: -webkit-flex;
@@ -862,6 +885,10 @@ body {
   right: 0.25rem;
 }
 
+.table__rows .row .col b, .table__rows .row .col span {
+  white-space: nowrap;
+}
+
 .table__rows .row .col b {
   font-weight: var(--font-w-sm);
 }
@@ -1000,6 +1027,30 @@ body {
   letter-spacing: 0.5px;
 }
 
+@media only screen and (max-width: 1023px) {
+  .table__rows .row .md-w-10 {
+    width: 10% !important;
+  }
+  .table__rows .row .md-w-19 {
+    width: 19% !important;
+  }
+  .table__rows .row .md-w-20 {
+    width: 20% !important;
+  }
+  .table__rows .row .md-w-24 {
+    width: 24% !important;
+  }
+  .table__rows .row .md-w-25 {
+    width: 25% !important;
+  }
+  .table__rows .row .md-w-26 {
+    width: 26% !important;
+  }
+  .table__rows .row .md-w-30 {
+    width: 30% !important;
+  }
+}
+
 .table__rows .row.first b {
   font-size: 0.75rem;
   letter-spacing: 0.5px;
@@ -1024,6 +1075,13 @@ body {
 
 .table__result .first b, .table__result .first span {
   color: #3e4559;
+}
+
+@media only screen and (max-width: 1023px) {
+  .table.table-taxes .col b, .table.table-taxes .col span {
+    font-size: 0.75rem;
+    white-space: normal;
+  }
 }
 
 .main-content {
@@ -1247,6 +1305,12 @@ body {
   margin-right: 1rem !important;
 }
 
+@media only screen and (max-width: 1023px) {
+  .mr-16 {
+    margin-right: 0.5rem !important;
+  }
+}
+
 .mr-20 {
   margin-right: 1.25rem !important;
 }
@@ -1272,6 +1336,13 @@ body {
 .mx-40 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .mx-40 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
 }
 
 .mx-80 {
@@ -1542,6 +1613,10 @@ body {
           box-shadow: none;
 }
 
+.button.button-blue:hover {
+  background-color: var(--cornflower-h);
+}
+
 .button.button-blue::before {
   display: none;
 }
@@ -1657,11 +1732,25 @@ body {
   border-radius: 0.25rem;
 }
 
+@media only screen and (max-width: 1023px) {
+  .text-block-c {
+    padding: 0.125rem 0.25rem;
+  }
+}
+
 .text-block-minus,
 .text-block-plus,
 .text-block-zero {
   font-size: 0.8125rem;
   letter-spacing: 0.17px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .text-block-minus,
+  .text-block-plus,
+  .text-block-zero {
+    font-size: 0.75rem;
+  }
 }
 
 .text-block-minus {
@@ -1810,9 +1899,16 @@ body {
   padding: 1.25rem 1.5625rem;
 }
 
+@media only screen and (max-width: 1023px) {
+  .chart-table__item {
+    padding: 0.625rem 0.9375rem;
+  }
+}
+
 .chart-table__item-top .name {
   font-weight: var(--font-w-sm);
   color: var(--slate-two);
+  white-space: nowrap;
 }
 
 .chart-table__item-top .first {
@@ -2252,6 +2348,19 @@ body {
   padding-right: 1.5625rem;
 }
 
+@media only screen and (max-width: 1023px) {
+  .message_wrap__left {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 65%;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    max-width: 65%;
+  }
+  .message_wrap__left p {
+    font-size: 0.84375rem;
+  }
+}
+
 .message_wrap__right {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 25%;
@@ -2275,6 +2384,16 @@ body {
           justify-content: flex-end;
 }
 
+@media only screen and (max-width: 1023px) {
+  .message_wrap__right {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 35%;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+    max-width: 35%;
+  }
+}
+
 .message_wrap__right .button svg {
   margin-right: 0;
 }
@@ -2285,6 +2404,12 @@ body {
 
 .form_invoice {
   margin: 0 5rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .form_invoice {
+    margin: 0 1.25rem;
+  }
 }
 
 .form_invoice .field {
