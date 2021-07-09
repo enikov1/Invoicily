@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Inner Pages Top 100 Customers</title>
+    <title>Inner Pages Account</title>
     <link rel="stylesheet" href="css/dashboard.min.css">
     <link rel="stylesheet" href="css/dashboard_libs.min.css">
   </head>
@@ -156,251 +156,42 @@
 </svg></i></button>
           </div>
         </header>
-        <div class="table mx-40 mt-20">
-          <div class="table__header">
-            <h1>Customers</h1>
-            <div class="flex flex-wrap items-center">
-              <button class="button ml-8" type="button" data-toggle="filter"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#50576B" fill-rule="nonzero">
-<g>
-<g>
-<path d="M11.437 0H.563c-.5 0-.752.606-.398.96L4.5 5.295v4.83c0 .184.09.356.24.46l1.875 1.313c.37.259.885-.004.885-.461V5.295L11.835.96c.353-.353.103-.96-.398-.96z" transform="translate(-1072 -93) translate(1056 84) translate(16 9)"/>
-</g>
-</g>
-</g>
-</g>
-</svg><span>Filter</span>
-              </button>
-              <button class="button ml-8" type="button" data-role="modal_export"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#50576B" fill-rule="nonzero">
-<g>
-<g>
-<g>
-<path d="M5.25 3.188V0H.562C.252 0 0 .25 0 .563v10.874c0 .312.25.563.563.563h7.875c.311 0 .562-.25.562-.563V3.75H5.812c-.309 0-.562-.253-.562-.563zM7.042 8.14l-2.26 2.243c-.156.155-.408.155-.563 0l-2.26-2.243c-.238-.236-.071-.641.263-.641H3.75V5.625c0-.207.168-.375.375-.375h.75c.207 0 .375.168.375.375V7.5h1.528c.334 0 .501.405.264.641zm1.794-5.68L6.54.164C6.436.06 6.293 0 6.143 0H6v3h3v-.143c0-.148-.059-.29-.164-.396z" transform="translate(-1166 -93) translate(1056 84) translate(92) translate(18 9)"/>
-</g>
-</g>
-</g>
-</g>
-</g>
-</svg><span>Export</span>
-              </button>
-              <button class="button button-blue ml-8" type="button" data-role="modal_add_customer"><i class="ic-plus mr-10"></i><span>Add customer</span></button>
-            </div>
-          </div>
-          <div class="table__nav _js_tabs_list">
-            <ul>
-              <li><a href="#">All </a></li>
-              <li class="active"><a href="#">Top 100</a></li>
+        <div class="mx-40 mt-32">
+          <h1 class="mb-16">Account</h1>
+        </div>
+        <div class="chart-table account-table chart-table-3 mx-40 mt-16">
+          <div class="chart-table__item"><b class="account-table__title">Your business</b>
+            <ul class="account-table__items">
+              <li> <a href="#">Account details</a></li>
+              <li> <a href="#">Business details</a></li>
+              <li> <a href="#">External payout accounts and scheduling</a></li>
+              <li> <a href="#">Tax details</a></li>
+              <li> <a href="#">Branding</a></li>
+              <li> <a href="#">Emails</a></li>
             </ul>
           </div>
-          <div class="table__rows">
-            <div class="row first">
-              <div class="col w-3">
-                <input type="checkbox" name="checked_all">
-              </div>
-              <div class="col w-30">
-                <button type="button"><b class="mr-8">EMAIL</b><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3">
-<g>
-<g>
-<path d="M89 9.059h-1.539c-.12.494-.31.953-.572 1.362l1.087 1.087-1.482 1.483-1.087-1.087c-.41.254-.868.444-1.348.557V14H81.94v-1.539c-.48-.113-.939-.303-1.348-.557l-1.087 1.087-1.497-1.497 1.087-1.087c-.254-.41-.444-.868-.557-1.348H77V6.962h1.532c.113-.494.31-.953.564-1.37L78.01 4.507l1.483-1.482 1.087 1.087c.41-.262.875-.452 1.362-.572V2h2.118v1.539c.48.113.939.303 1.348.557l1.087-1.087 1.497 1.497-1.087 1.087c.254.416.451.875.564 1.37H89v2.096zm-6 1.059c1.172 0 2.118-.946 2.118-2.118S84.172 5.882 83 5.882 80.882 6.828 80.882 8s.946 2.118 2.118 2.118z" transform="translate(-387 -180) translate(310 76) translate(0 102)"/>
-</g>
-</g>
-</g>
-</g>
-</svg>
-                </button>
-              </div>
-              <div class="col w-32">
-                <button type="button"><b>DESCRIPTION</b></button>
-              </div>
-              <div class="col w-16"><b class="mr-8">TOTAL SPENT		</b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3">
-<g>
-<g>
-<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
-</g>
-</g>
-</g>
-</g>
-</svg>
-              </div>
-              <div class="col w-18"><b>CREATED</b></div>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>jo@homsaw.gov</b></div>
-              <div class="col w-32"><span>CAD000001336</span></div>
-              <div class="col w-16"><b>$58,762.74</b></div>
-              <div class="col w-18"><span>Jan 19, 2020, 8:44 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>lowowji@pemawiwo.net</b></div>
-              <div class="col w-32"><span>CAD000001140</span></div>
-              <div class="col w-16"><b>$33,921.30</b></div>
-              <div class="col w-18"><span>Jan 19, 2020, 8:21 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>apgebmoz@ohe.com</b></div>
-              <div class="col w-32"><span>CAD000001318</span></div>
-              <div class="col w-16"><b>$22,799.99</b></div>
-              <div class="col w-18"><span>Jan 19, 2020, 8:02 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>sula@alzu.io</b></div>
-              <div class="col w-32"><span>CAD000001307</span></div>
-              <div class="col w-16"><b>$4,589.50</b></div>
-              <div class="col w-18"><span>Dec 8, 2019, 1:47 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>muzi@irjad.io</b></div>
-              <div class="col w-32"><span>CAD000001306</span></div>
-              <div class="col w-16"><b>$3,605.85</b></div>
-              <div class="col w-18"><span>Mar 1, 2020, 8:30 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>komgal@mef.com</b></div>
-              <div class="col w-32"><span>CAD000001240</span></div>
-              <div class="col w-16"><b>$3,462.93</b></div>
-              <div class="col w-18"><span>Jan 9, 2020, 2:02 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>diiti@afuruz.com</b></div>
-              <div class="col w-32"><span>CAD000000005</span></div>
-              <div class="col w-16"><b>$3,281.43</b></div>
-              <div class="col w-18"><span>Jan 17, 2020, 1:20 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>okoifa@vejo.io</b></div>
-              <div class="col w-32"><span>CAD000001291</span></div>
-              <div class="col w-16"><b>$3,038.43</b></div>
-              <div class="col w-18"><span>Aug 28, 2020, 4:59 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>ca@gekin.edu</b></div>
-              <div class="col w-32"><span>CAD000001289</span></div>
-              <div class="col w-16"><b>$2,072.29</b></div>
-              <div class="col w-18"><span>Oct 20, 2019, 3:17 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>ruukerim@far.com</b></div>
-              <div class="col w-32"><span>CAD000001250</span></div>
-              <div class="col w-16"><b>$2,069.55</b></div>
-              <div class="col w-18"><span>Nov 12, 2020, 2:16 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>zikavnu@geluwpu.edu</b></div>
-              <div class="col w-32"><span>CAD000000743</span></div>
-              <div class="col w-16"><b>$2,060.20</b></div>
-              <div class="col w-18"><span>Aug 24, 2020, 1:48 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>wojtuc@ku.gov</b></div>
-              <div class="col w-32"><span>CAD000000743</span></div>
-              <div class="col w-16"><b>$1,991.95</b></div>
-              <div class="col w-18"><span>Dec 12, 2019, 11:47 AM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>faw@canohuwu.org</b></div>
-              <div class="col w-32"><span>CAD000001249</span></div>
-              <div class="col w-16"><b>$1,990.79</b></div>
-              <div class="col w-18"><span>Jun 30, 2020, 10:42 AM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>ekaalda@pitef.net</b></div>
-              <div class="col w-32"><span>CAD000001246</span></div>
-              <div class="col w-16"><b>$1,940.74</b></div>
-              <div class="col w-18"><span>Jan 22, 2020, 3:32 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>ruccan@jim.com</b></div>
-              <div class="col w-32"><span>CAD000001245</span></div>
-              <div class="col w-16"><b>$1,772.49</b></div>
-              <div class="col w-18"><span>Aug 10, 2020, 5:22 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>ruccan@jim.com</b></div>
-              <div class="col w-32"><span>CAD000001245</span></div>
-              <div class="col w-16"><b>$1,431.47</b></div>
-              <div class="col w-18"><span>Jun 22, 2020, 3:31 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
-            <div class="row"><a class="link" href="#"> </a>
-              <div class="col w-3">
-                <input type="checkbox" name="checked_item">
-              </div>
-              <div class="col w-30"><b>ruccan@jim.com</b></div>
-              <div class="col w-32"><span>CAD000001245</span></div>
-              <div class="col w-16"><b>$1,348.14</b></div>
-              <div class="col w-18"><span>Feb 5, 2020, 1:55 PM</span></div>
-              <button class="button other_list" type="button"><span>•••</span></button>
-            </div>
+          <div class="chart-table__item"><b class="account-table__title">Team and security</b>
+            <ul class="account-table__items">
+              <li> <a href="#">Team</a></li>
+              <li> <a href="#">Security history</a></li>
+              <li> <a href="#">Authorised applications</a></li>
+            </ul>
+          </div>
+          <div class="chart-table__item"><b class="account-table__title">Compliance</b>
+            <ul class="account-table__items">
+              <li> <a href="#">PCI compliance</a></li>
+            </ul>
+          </div>
+          <div class="chart-table__item"><b class="account-table__title">Reporting and documents</b>
+            <ul class="account-table__items">
+              <li><a href="#">Documents</a></li>
+              <li><a href="#">Legacy exports</a></li>
+            </ul>
+          </div>
+          <div class="chart-table__item"><b class="account-table__title">Invoice and Receipt beta programs</b>
+            <ul class="account-table__items">
+              <li><a href="#">Early access features</a></li>
+            </ul>
           </div>
         </div>
       </div>

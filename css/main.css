@@ -89,6 +89,14 @@ textarea {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Roboto Mono';
+  src: local("Roboto Mono"), local("RobotoMono-Regular"), url("../fonts/RobotoMono/RobotoMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-default: 'Source Sans Pro';
   --font-w-l: 300;

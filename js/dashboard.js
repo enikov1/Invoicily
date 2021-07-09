@@ -34,6 +34,44 @@ if(tabs) {
 	
 }
 
+// popup
+
+const button_active = document.querySelectorAll('.button[data-role]');
+
+if(button_active) {
+	button_active.forEach(e => {
+		e.addEventListener('click', () => {
+			const modal_name = e.getAttribute('data-role');
+			const modal_event = document.querySelector(`.modal[data-toggle=${modal_name}]`);
+
+			modal_event.classList.add('active');
+			
+		});
+	});
+
+	const modal_close = document.querySelectorAll('.close__modal');
+
+	modal_close.forEach(e => {
+		e.addEventListener('click', () => document.querySelector(`.modal.active`).classList.remove('active'));
+	});
+}
+
+const button_section = document.querySelectorAll('button[data-section]');
+
+if(button_section) {
+	button_section.forEach(e => {
+		e.addEventListener('click', () => {
+			const section_name = e.getAttribute('data-section');
+			const section_event = document.querySelector(`.section_toggle[data-section-toggle=${section_name}]`);
+
+			e.classList.toggle('active');
+			section_event.classList.toggle('active');
+			
+		});
+	});
+}
+
+
 // checkbox table
 
 const checkbox_all_button = document.querySelector('input[name=checked_all]');
@@ -89,6 +127,9 @@ const labels_chart3 = ['', '', '', '', '', '', ''];
 const labels_chart4 = ['', '', '', '', '', '',''];
 const labels_chart5 = ['', ''];
 const labels_chart6 = ['', '', '', '', '', '', ''];
+const labels_chart7 = ['', '', '', '', '', '', ''];
+const labels_chart8 = ['', '', '', '', '', '', ''];
+const labels_chart9 = ['', ''];
 
 const data_chart1 = {
   labels: labels_chart1,
@@ -203,8 +244,69 @@ const data_chart6 = {
 ]
 };
 
-var chart1 = document.querySelector('#chart1').getContext("2d");
+const data_chart7 = {
+  labels: labels_chart7,
+  datasets: [
+	{
+		backgroundColor: '#6a7486',
+		borderColor: '#6a7486',
+		data: [3, 20, 15, 12, 8, 11, 0],
+		pointRadius: 0,
+		borderWidth: 1
+	},
+	{
+		backgroundColor: '#635cff',
+		borderColor: '#635cff',
+		data: [18, 15, 22, 4, 13, 20, 0],
+		pointRadius: 0,
+		borderWidth: 1
+	}
+]
+};
+
+const data_chart8 = {
+  labels: labels_chart8,
+  datasets: [
+	{
+		backgroundColor: '#6a7486',
+		borderColor: '#6a7486',
+		data: [3, 20, 15, 12, 8, 11, 0],
+		pointRadius: 0,
+		borderWidth: 1
+	},
+	{
+		backgroundColor: '#635cff',
+		borderColor: '#635cff',
+		data: [18, 15, 22, 4, 13, 20, 0],
+		pointRadius: 0,
+		borderWidth: 1
+	}
+]
+};
+
+const data_chart9 = {
+  labels: labels_chart9,
+  datasets: [
+	{
+		backgroundColor: '#6a7486',
+		borderColor: '#6a7486',
+		data: [1, 1],
+		pointRadius: 0,
+		borderWidth: 0
+	},
+	{
+		backgroundColor: '#635cff',
+		borderColor: '#635cff',
+		data: [0, 0],
+		pointRadius: 0,
+		borderWidth: 2
+	}
+]
+};
+
+let chart1 = document.querySelector('#chart1');
 if(chart1) {
+	chart1.getContext("2d");
 	var chart1Canvas = new Chart(chart1, {
 		type: 'line',
 		data: data_chart1,
@@ -229,8 +331,11 @@ if(chart1) {
 }
 
 
-var chart2 = document.querySelector('#chart2').getContext("2d");
+let chart2 = document.querySelector('#chart2');
 if(chart2) {
+
+	chart2.getContext("2d");
+
 	var chart2Canvas = new Chart(chart2, {
 		type: 'line',
 		data: data_chart2,
@@ -255,8 +360,10 @@ if(chart2) {
 }
 
 
-var chart3 = document.querySelector('#chart3').getContext("2d");
+let chart3 = document.querySelector('#chart3');
 if(chart3) {
+	chart3.getContext("2d");
+
 	var chart3Canvas = new Chart(chart3, {
 		type: 'line',
 		data: data_chart3,
@@ -281,9 +388,11 @@ if(chart3) {
 }
 
 
-var chart4 = document.querySelector('#chart4').getContext("2d");
+let chart4 = document.querySelector('#chart4');
 
 if(chart4) {
+	chart4.getContext("2d");
+
 	var chart4Canvas = new Chart(chart4, {
 		type: 'line',
 		data: data_chart4,
@@ -309,8 +418,11 @@ if(chart4) {
 
 
 
-var chart5 = document.querySelector('#chart5').getContext("2d");
+let chart5 = document.querySelector('#chart5');
+
 if(chart5) {
+	chart5.getContext("2d");
+
 	var chart5Canvas = new Chart(chart5, {
 		type: 'line',
 		data: data_chart5,
@@ -335,9 +447,11 @@ if(chart5) {
 }
 
 
-var chart6 = document.querySelector('#chart6').getContext("2d");
+let chart6 = document.querySelector('#chart6');
 
 if(chart6) {
+	chart6.getContext("2d");
+
 	var chart6Canvas = new Chart(chart6, {
 		type: 'line',
 		data: data_chart6,
@@ -360,3 +474,136 @@ if(chart6) {
 		}
 	});
 }
+
+let chart7 = document.querySelector('#chart7');
+
+if(chart7) {
+	chart7.getContext("2d");
+
+	var chart7Canvas = new Chart(chart7, {
+		type: 'line',
+		data: data_chart7,
+
+		options: {
+			maintainAspectRatio: false,
+			plugins: {
+				legend: {
+					display: false
+				},
+			},
+			scales: {
+				y: {
+					display: false,
+				},
+				x: {
+					display: false
+				}
+			},
+		}
+	});
+}
+
+let chart8 = document.querySelector('#chart8');
+
+if(chart8) {
+	chart8.getContext("2d");
+
+	var chart8Canvas = new Chart(chart8, {
+		type: 'line',
+		data: data_chart8,
+
+		options: {
+			maintainAspectRatio: false,
+			plugins: {
+				legend: {
+					display: false
+				},
+			},
+			scales: {
+				y: {
+					display: false,
+				},
+				x: {
+					display: false
+				}
+			},
+		}
+	});
+}
+
+let chart9 = document.querySelector('#chart9');
+
+if(chart9) {
+	chart9.getContext("2d");
+
+	var chart9Canvas = new Chart(chart9, {
+		type: 'line',
+		data: data_chart9,
+
+		options: {
+			maintainAspectRatio: false,
+			plugins: {
+				legend: {
+					display: false
+				},
+			},
+			scales: {
+				y: {
+					display: false,
+				},
+				x: {
+					display: false
+				}
+			},
+		}
+	});
+}
+
+// masked
+
+const price_mask = document.querySelector('.mask-price');
+const percent_mask = document.querySelector('.mask-percent');
+
+if(price_mask) {
+	var numberMask = IMask(price_mask,
+	{
+		mask: Number,
+		min: 0,
+		max: 100000,
+		scale: 2,
+		signed: true,
+		radix: '.',
+		mapToRadix: [','],
+		thousandsSeparator: ' '
+	});
+}
+
+if(percent_mask) {
+	var numberMask = IMask(percent_mask,
+	{
+		mask: Number,
+		min: 0,
+		max: 100,
+		scale: 2,
+		signed: true,
+		radix: '.',
+		mapToRadix: [','],
+		thousandsSeparator: ' '
+	});
+}
+
+
+// form add
+
+const field_percent = document.querySelector('input#radio1');
+const field_fixed = document.querySelector('input#radio2');
+
+field_percent.addEventListener('input', (event) => {
+	document.querySelector('[data-toggle=form_percentage]').classList.remove('hide');
+	document.querySelector('[data-toggle=form_fixed]').classList.add('hide');
+});
+
+field_fixed.addEventListener('input', (event) => {
+	document.querySelector('[data-toggle=form_percentage]').classList.add('hide');
+	document.querySelector('[data-toggle=form_fixed]').classList.remove('hide');
+});
