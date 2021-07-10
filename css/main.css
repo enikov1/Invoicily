@@ -2518,7 +2518,7 @@ body {
 
 @media (min-width: 1440px) {
   .page_account {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 

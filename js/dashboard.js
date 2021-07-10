@@ -99,6 +99,31 @@ let slideUp = (target, duration=500) => {
 	
 // }
 
+function fadeOut(el){
+  el.style.opacity = 1;
+
+  (function fade() {
+    if ((el.style.opacity -= .1) < 0) {
+      el.style.display = "none";
+    } else {
+      requestAnimationFrame(fade);
+    }
+  })();
+};
+
+function fadeIn(el, display){
+  el.style.opacity = 0;
+  el.style.display = display || "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (!((val += .1) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+};
+
 // popup
 
 const button_active = document.querySelectorAll('.button[data-role]');
@@ -108,8 +133,11 @@ if(button_active) {
 		e.addEventListener('click', () => {
 			const modal_name = e.getAttribute('data-role');
 			const modal_event = document.querySelector(`.modal[data-toggle=${modal_name}]`);
-
+			
+			// modal_event.removeAttribute('style');
 			modal_event.classList.add('active');
+
+			fadeIn(modal_event);
 			
 		});
 	});
@@ -117,7 +145,11 @@ if(button_active) {
 	const modal_close = document.querySelectorAll('.close__modal');
 
 	modal_close.forEach(e => {
-		e.addEventListener('click', () => document.querySelector(`.modal.active`).classList.remove('active'));
+		e.addEventListener('click', () => {
+			fadeOut(document.querySelector(`.modal.active`));
+			document.querySelector(`.modal.active`).classList.remove('active');
+		});
+		
 	});
 }
 
@@ -168,6 +200,8 @@ if(filter) {
 		filter_content.classList.add('active');
 
 		filter_content.setAttribute('style', `left: ${posRight}px; top: ${posBottom}px`);
+
+		fadeIn(filter_content);
 	
 	});
 
@@ -179,6 +213,7 @@ if(filter) {
 
 			if (!its_select && !its_btnSelect) {
 				filter_content.classList.remove('active');
+				fadeOut(filter_content);
 			}
 		}
 	});
