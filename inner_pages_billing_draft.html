@@ -12,106 +12,71 @@
       <aside class="aside">
         <div class="aside__header">
           <div class="aside__header-selected">
-            <button type="button"><img class="logo" src="./img/dashboard/logo.svg" alt="image"><span>Company Name<i class="icon-ic-drop-down"></i></span></button>
+            <button type="button"><span class="logo"></span><span>Company Name<i class="icon-ic-drop-down"></i></span></button>
           </div>
         </div>
-        <nav class="aside__nav _js_tabs_list">
+        <nav class="aside__nav">
           <ul>
-            <li class="active mb-32"><a href="#" data-item="home">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
-<g fill="none" fill-rule="evenodd">
-<g>
-<g>
-<path class="ic_path_1" fill="#A4ACBA" d="M6.5 1l6 5v7h-4v-3c0-.552-.448-1-1-1h-2c-.552 0-1 .448-1 1v3h-4V6l6-5zm0 4c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z" transform="translate(-27 -84) translate(28 85)"/>
-<path class="ic_path_2" stroke="#50576B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0 5.5L6.5 0 13 5.5" transform="translate(-27 -84) translate(28 85)"/>
-</g>
-</g>
-</g>
-</svg>Home</a></li>
-            <li><a href="#" data-item="customers">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+            <li class="active mb-32"><a href="/inner_pages_home.html" data-item="home">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14">
+<path class="ic_path_1" d="M6.5 1l6 5v7h-4v-3c0-.552-.448-1-1-1h-2c-.552 0-1 .448-1 1v3h-4V6l6-5zm0 4c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z" transform="translate(-27 -84) translate(28 85)"/>
+<path class="ic_path_2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0 5.5L6.5 0 13 5.5" transform="translate(-27 -84) translate(28 85)"/>
+</svg>
+                </div>Home</a></li>
+            <li><a href="/inner_pages_all_customers.html" data-item="customers">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
 <defs>
-<path id="ic1_1" fill="#50576B" d="M8 0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm0 3C6.343 3 5 4.343 5 6s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"/>
+<path class="ic_path_1" id="ic1_1" d="M8 0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm0 3C6.343 3 5 4.343 5 6s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"/>
 </defs>
-<g fill="none" fill-rule="evenodd">
-<g>
-<g transform="translate(-26 -130) translate(26 130)">
-<mask id="ic1_2" fill="#fff">
+<mask class="ic_path_2" id="ic1_2">
 <use xlink:href="#ic1_1"/>
 </mask>
-<use fill="#50576B" xlink:href="#ic1_1"/>
-<ellipse cx="8" cy="17.5" fill="white" mask="url(#ic1_2)" rx="8" ry="6.5"/>
-</g>
-</g>
-</g>
-</svg>Customers</a></li>
-            <li class="mb-32"><a href="#" data-item="billing">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
-<g fill="none" fill-rule="evenodd">
-<g>
-<g>
+<use class="ic_path_1" xlink:href="#ic1_1"/>
+<ellipse class="ic_path_2" cx="8" cy="17.5" mask="url(#ic1_2)" rx="8" ry="6.5"/>
+</svg>
+                </div>Customers</a></li>
+            <li class="mb-32"><a href="/inner_pages_billing_all_invoices.html" data-item="billing">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12">
 <path class="ic_path_1" fill="#A4ACBA" d="M13.5 0c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5H11c0-1.105-.895-2-2-2s-2 .895-2 2H.5C.224 8 0 7.776 0 7.5v-7C0 .224.224 0 .5 0h13zM7 2c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2z" transform="translate(-26 -160) translate(26 160)"/>
 <path class="ic_path_2" fill="#50576B" d="M15.5 4c.276 0 .5.224.5.5v7c0 .276-.224.5-.5.5h-13c-.276 0-.5-.224-.5-.5v-7c0-.276.224-.5.5-.5h13zM9 6c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2z" transform="translate(-26 -160) translate(26 160)"/>
-</g>
-</g>
-</g>
-</svg>Billing</a></li>
-            <li><a href="#" data-item="coupons">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
-<g fill="none" fill-rule="evenodd">
-<g>
-<g>
-<path class="ic_path_1" fill="#50576B" d="M14 0v2c-1.105 0-2 .895-2 2s.895 2 2 2v2H5V0h9z" transform="translate(-28 -208) translate(28 208)"/>
-<path class="ic_path_2" fill="#A4ACBA" d="M0 0H4V8H0z" transform="translate(-28 -208) translate(28 208)"/>
-</g>
-</g>
-</g>
-</svg>Coupons</a></li>
-            <li><a href="#" data-item="taxes"><i class="ic"><span></span></i>Taxes</a></li>
-            <li class="mb-32"><a href="#" data-item="reports">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-<g fill="none" fill-rule="evenodd">
-<g>
-<g>
-<path class="ic_path_1" fill="#A4ACBA" d="M2 2c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v12c0 1.105-.895 2-2 2H4c-1.105 0-2-.895-2-2v-1h1c.552 0 1-.448 1-1s-.448-1-1-1H2V9h1c.552 0 1-.448 1-1s-.448-1-1-1H2V5h1c.552 0 1-.448 1-1s-.448-1-1-1H2V2z" transform="translate(-26 -260) translate(26 260)"/>
-<path class="ic_path_2" fill="#50576B" d="M2 11v2H1c-.552 0-1-.448-1-1s.448-1 1-1h1zm0-4v2H1c-.552 0-1-.448-1-1s.448-1 1-1h1zm0-4v2H1c-.552 0-1-.448-1-1s.448-1 1-1h1zM14 3v10h-2V3h2zm-3 4v6H9V7h2zm-3 3v3H6v-3h2z" transform="translate(-26 -260) translate(26 260)"/>
-</g>
-</g>
-</g>
-</svg>Reports</a></li>
+</svg>
+                </div>Billing</a></li>
+            <li><a href="/inner_pages_coupons.html" data-item="coupons">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8">
+<path class="ic_path_1" d="M14 0v2c-1.105 0-2 .895-2 2s.895 2 2 2v2H5V0h9z" transform="translate(-28 -208) translate(28 208)"/>
+<path class="ic_path_2" d="M0 0H4V8H0z" transform="translate(-28 -208) translate(28 208)"/>
+</svg>
+                </div>Coupons</a></li>
+            <li><a href="/inner_pages_taxes.html" data-item="taxes"><i class="ic"><span></span></i>Taxes</a></li>
+            <li class="mb-32"><a href="/inner_pages_reports.html" data-item="reports">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path class="ic_path_1" d="M2 2c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v12c0 1.105-.895 2-2 2H4c-1.105 0-2-.895-2-2v-1h1c.552 0 1-.448 1-1s-.448-1-1-1H2V9h1c.552 0 1-.448 1-1s-.448-1-1-1H2V5h1c.552 0 1-.448 1-1s-.448-1-1-1H2V2z" transform="translate(-26 -260) translate(26 260)"/>
+<path class="ic_path_2" d="M2 11v2H1c-.552 0-1-.448-1-1s.448-1 1-1h1zm0-4v2H1c-.552 0-1-.448-1-1s.448-1 1-1h1zm0-4v2H1c-.552 0-1-.448-1-1s.448-1 1-1h1zM14 3v10h-2V3h2zm-3 4v6H9V7h2zm-3 3v3H6v-3h2z" transform="translate(-26 -260) translate(26 260)"/>
+</svg>
+                </div>Reports</a></li>
             <li><a href="#" data-item="settings">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-<g fill="none" fill-rule="evenodd">
-<g fill="#50576B">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
 <path class="ic_path_1" d="M42 315.235h-1.795c-.14.577-.363 1.112-.667 1.59l1.268 1.268-1.73 1.73-1.268-1.269c-.477.297-1.013.519-1.573.65V321h-2.47v-1.795c-.56-.132-1.096-.354-1.573-.65l-1.268 1.267-1.746-1.746 1.268-1.268c-.297-.477-.519-1.013-.65-1.573H28v-2.446h1.787c.132-.576.362-1.111.659-1.597l-1.268-1.268 1.73-1.73 1.267 1.268c.478-.304 1.021-.527 1.59-.667V307h2.47v1.795c.56.132 1.096.354 1.573.65l1.268-1.267 1.746 1.746-1.268 1.268c.297.486.527 1.02.659 1.597H42v2.446zm-7 1.236c1.367 0 2.47-1.104 2.47-2.471s-1.103-2.47-2.47-2.47c-1.367 0-2.47 1.103-2.47 2.47 0 1.367 1.103 2.47 2.47 2.47z" transform="translate(-28 -307)"/>
-</g>
-</g>
-</svg>Settings</a></li>
-            <li><a href="#" data-item="account">
-                <svg class="ic" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-<g fill="none" fill-rule="evenodd">
-<g>
-<g>
-<path class="ic_path_1" fill="#A4ACBA" d="M13 0c.552 0 1 .448 1 1v12c0 .552-.448 1-1 1H1c-.552 0-1-.448-1-1V1c0-.552.448-1 1-1h12zM6 8H2c-.552 0-1 .448-1 1s.448 1 1 1h4c.552 0 1-.448 1-1s-.448-1-1-1zm6-4H8c-.552 0-1 .448-1 1s.448 1 1 1h4c.552 0 1-.448 1-1s-.448-1-1-1z" transform="translate(-28 -335) translate(28 335)"/>
-<path class="ic_path_2" fill="#50576B" d="M5 10v1.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5V10h2zm6-4v5.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5V6h2zM4.5 2c.276 0 .5.224.5.5V8H3V2.5c0-.276.224-.5.5-.5h1zm6 0c.276 0 .5.224.5.5V4H9V2.5c0-.276.224-.5.5-.5h1z" transform="translate(-28 -335) translate(28 335)"/>
-</g>
-</g>
-</g>
-</svg>Account       </a></li>
+</svg>
+                </div>Settings</a></li>
+            <li><a href="/inner_pages_account.html" data-item="account">
+                <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+<path class="ic_path_1" d="M13 0c.552 0 1 .448 1 1v12c0 .552-.448 1-1 1H1c-.552 0-1-.448-1-1V1c0-.552.448-1 1-1h12zM6 8H2c-.552 0-1 .448-1 1s.448 1 1 1h4c.552 0 1-.448 1-1s-.448-1-1-1zm6-4H8c-.552 0-1 .448-1 1s.448 1 1 1h4c.552 0 1-.448 1-1s-.448-1-1-1z" transform="translate(-28 -335) translate(28 335)"/>
+<path class="ic_path_2" d="M5 10v1.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5V10h2zm6-4v5.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5V6h2zM4.5 2c.276 0 .5.224.5.5V8H3V2.5c0-.276.224-.5.5-.5h1zm6 0c.276 0 .5.224.5.5V4H9V2.5c0-.276.224-.5.5-.5h1z" transform="translate(-28 -335) translate(28 335)"/>
+</svg>
+                </div>Account       </a></li>
           </ul>
         </nav>
       </aside>
       <div class="main-content">
         <header class="header">
           <div class="header__search">
-            <div class="field__set"><i class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <div class="field__set"><i class="ic ic-search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
 <g fill="none" fill-rule="evenodd">
 <g stroke="#6A7486" stroke-width="1.5">
-<g>
 <g transform="translate(-307 -18) translate(270) rotate(45 -.513 64.784)">
 <circle cx="5" cy="5" r="5"/>
 <path fill="#D8D8D8" stroke-linecap="round" d="M10.5 5L14.5 5"/>
-</g>
 </g>
 </g>
 </g>
@@ -120,87 +85,43 @@
             </div>
           </div>
           <div class="header__right">
-            <button class="button__item mr-24" type="button"><i class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3" fill-rule="nonzero">
-<g>
-<g>
+            <button class="button__item mr-24" type="button"><i class="ic ic-feedback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 <path d="M12.727 0c-1.94 0-3.264 1.119-4.434 2.105-.974.822-1.814 1.531-2.838 1.531h-4C.455 3.636 0 5.521 0 7.273c0 1.751.455 3.636 1.455 3.636h4c1.024 0 1.864.71 2.838 1.531 1.17.987 2.495 2.105 4.434 2.105 2.149 0 3.273-3.658 3.273-7.272C16 3.659 14.876 0 12.727 0zm0 13.09c-.617 0-1.818-2.053-1.818-5.817 0-3.765 1.2-5.818 1.818-5.818.618 0 1.818 2.053 1.818 5.818 0 3.764-1.2 5.818-1.818 5.818z" transform="translate(-1230 -20) translate(270) translate(960 20)"/>
 <path d="M12.186 5.168c-.105-.026-.211-.007-.299.052-.087.06-.143.156-.155.26-.064.608-.096 1.194-.096 1.793 0 .598.032 1.184.097 1.791.012.105.068.2.155.26.061.043.134.064.207.064.03 0 .06-.003.091-.011.96-.25 1.632-1.116 1.632-2.104 0-.989-.671-1.854-1.632-2.105zM6.791 13.455c-.208 0-.391-.133-.456-.33l-.41-1.227c-.044-.13-.201-.231-.338-.25-.044-.007-.09-.012-.132-.012H2.96c-.114 0-.222.054-.29.145-.069.091-.091.21-.06.319l.813 2.845c.177.62.753 1.055 1.399 1.055H6.79C7.457 16 8 15.457 8 14.791v-.128c0-.666-.543-1.208-1.209-1.208z" transform="translate(-1230 -20) translate(270) translate(960 20)"/>
-</g>
-</g>
-</g>
-</g>
 </svg></i><span>Feedback?</span></button>
-            <button class="button__item mr-16" type="button"><i class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3" fill-rule="nonzero">
-<g>
-<g>
+            <button class="button__item mr-16" type="button"><i class="ic ic-notifications"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
 <path d="M7 16c1.104 0 2-.895 2-2H5c0 1.105.896 2 2 2zm6.73-4.678c-.603-.65-1.733-1.625-1.733-4.822 0-2.428-1.702-4.372-3.998-4.849V1C8 .448 7.552 0 7 0S6 .448 6 1v.651c-2.295.477-3.997 2.42-3.997 4.849 0 3.197-1.13 4.173-1.734 4.822-.187.201-.27.442-.269.678.003.512.406 1 1.003 1h11.994c.597 0 1-.488 1.003-1 .002-.236-.082-.477-.27-.678z" transform="translate(-1354 -20) translate(270) translate(1084 20)"/>
-</g>
-</g>
-</g>
-</g>
 </svg></i></button>
-            <button class="button__item" type="button"><i class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3" fill-rule="nonzero">
-<g>
-<g>
+            <button class="button__item" type="button"><i class="ic ic-question"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 <path d="M16 8c0 4.42-3.582 8-8 8s-8-3.58-8-8c0-4.417 3.582-8 8-8s8 3.583 8 8zM8.215 2.645c-1.758 0-2.88.74-3.76 2.057-.114.17-.076.4.088.524l1.119.849c.168.127.407.097.538-.068.576-.731.97-1.155 1.848-1.155.659 0 1.474.424 1.474 1.063 0 .483-.399.731-1.05 1.096-.758.425-1.762.955-1.762 2.28v.128c0 .214.173.387.387.387h1.806c.214 0 .387-.173.387-.387v-.043c0-.918 2.684-.956 2.684-3.44 0-1.872-1.941-3.29-3.76-3.29zm-.215 8c-.818 0-1.484.666-1.484 1.484S7.182 13.613 8 13.613s1.484-.666 1.484-1.484S8.818 10.645 8 10.645z" transform="translate(-1384 -20) translate(270) translate(1114 20)"/>
-</g>
-</g>
-</g>
-</g>
 </svg></i></button>
           </div>
         </header>
         <div class="message_wrap mx-20">
-          <div class="message_wrap__left">
-            <div class="ic mr-10"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3">
-<g>
-<g>
+          <div class="message_wrap__left"><i class="ic-info mr-10 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 <path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
-</g>
-</g>
-</g>
-</g>
-</svg>
-            </div>
+</svg></i>
             <div class="flex flex-col"><b>Preview our improved invoice email template</b>
               <p>We updated our invoice emails to make them look more consistent with the hosted invoice page and help build trust with your customers.</p>
             </div>
           </div>
-          <div class="message_wrap__right"><a class="button button-blue" href="#"><span>Preview the template</span>
-              <div class="ic ml-8"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+          <div class="message_wrap__right"><a class="button button-blue" href="#"><span>Preview the template</span><i class="ic-arrow-right ml-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke="#FFF" stroke-width="1.5">
-<g>
-<g>
-<g>
 <path d="M.5 5L9.5 5M5.5 0L10.5 5 5.5 10" transform="translate(-1332 -111) translate(290 74) translate(889 28) translate(154 10)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-              </div></a>
-            <button class="arrow" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+</svg></i></a>
+            <button class="arrow" type="button">
+              <div class="ic-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round">
-<g stroke="#8892A3" stroke-width="1.5">
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M4.596 -1.404L4.596 10.596" transform="translate(-1385 -111) translate(290 74) translate(1096 38) rotate(-45 4.596 4.596)"/>
 <path d="M4.596 -1.404L4.596 10.596" transform="translate(-1385 -111) translate(290 74) translate(1096 38) rotate(-135 4.596 4.596)"/>
 </g>
 </g>
-</g>
-</g>
 </svg>
+              </div>
             </button>
           </div>
         </div>
@@ -208,73 +129,41 @@
           <div class="table__header">
             <h1>Invoices</h1>
             <div class="flex flex-wrap items-center">
-              <button class="button ml-8" type="button" data-toggle="filter"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#50576B" fill-rule="nonzero">
-<g>
-<g>
+              <button class="button ml-8" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M11.437 0H.563c-.5 0-.752.606-.398.96L4.5 5.295v4.83c0 .184.09.356.24.46l1.875 1.313c.37.259.885-.004.885-.461V5.295L11.835.96c.353-.353.103-.96-.398-.96z" transform="translate(-1072 -93) translate(1056 84) translate(16 9)"/>
-</g>
-</g>
-</g>
-</g>
-</svg><span>Filter</span><span class="count">1</span>
-              </button>
-              <button class="button ml-8" type="button" data-role="modal_export"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#50576B" fill-rule="nonzero">
-<g>
-<g>
-<g>
+</svg></i><span>Filter</span><span class="count">1</span></button>
+              <button class="button ml-8" type="button" data-role="modal_export"><i class="ic-export"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 12">
 <path d="M5.25 3.188V0H.562C.252 0 0 .25 0 .563v10.874c0 .312.25.563.563.563h7.875c.311 0 .562-.25.562-.563V3.75H5.812c-.309 0-.562-.253-.562-.563zM7.042 8.14l-2.26 2.243c-.156.155-.408.155-.563 0l-2.26-2.243c-.238-.236-.071-.641.263-.641H3.75V5.625c0-.207.168-.375.375-.375h.75c.207 0 .375.168.375.375V7.5h1.528c.334 0 .501.405.264.641zm1.794-5.68L6.54.164C6.436.06 6.293 0 6.143 0H6v3h3v-.143c0-.148-.059-.29-.164-.396z" transform="translate(-1166 -93) translate(1056 84) translate(92) translate(18 9)"/>
-</g>
-</g>
-</g>
-</g>
-</g>
-</svg><span>Export</span>
-              </button>
+</svg></i><span>Export</span></button>
               <button class="button button-blue ml-8" type="button" data-role="modal_reate_invoice"><i class="ic-plus mr-10"></i><span>Create invoice</span></button>
             </div>
           </div>
           <div class="table__nav _js_tabs_list">
             <ul>
-              <li><a href="#">All invoices </a></li>
-              <li class="active"><a href="#">Draft</a></li>
-              <li><a href="#">Outstanding</a></li>
-              <li><a href="#">Past due</a></li>
-              <li><a href="#">Paid  </a></li>
+              <li><a href="/inner_pages_billing_all_invoices.html">All invoices </a></li>
+              <li class="active"><a href="/inner_pages_billing_draft.html">Draft</a></li>
+              <li><a href="/inner_pages_billing_outstanding.html">Outstanding</a></li>
+              <li><a href="/inner_pages_billing_past_due.html">Past due</a></li>
+              <li><a href="/inner_pages_billing_paid.html">Paid   </a></li>
             </ul>
           </div>
           <div class="table__rows">
             <div class="row first">
               <div class="col w-22">
-                <button type="button"><b class="mr-8">AMOUNT</b><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3">
-<g>
-<g>
+                <button type="button"><b class="mr-8">AMOUNT</b>
+                  <div class="ic-settings-table"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M89 9.059h-1.539c-.12.494-.31.953-.572 1.362l1.087 1.087-1.482 1.483-1.087-1.087c-.41.254-.868.444-1.348.557V14H81.94v-1.539c-.48-.113-.939-.303-1.348-.557l-1.087 1.087-1.497-1.497 1.087-1.087c-.254-.41-.444-.868-.557-1.348H77V6.962h1.532c.113-.494.31-.953.564-1.37L78.01 4.507l1.483-1.482 1.087 1.087c.41-.262.875-.452 1.362-.572V2h2.118v1.539c.48.113.939.303 1.348.557l1.087-1.087 1.497 1.497-1.087 1.087c.254.416.451.875.564 1.37H89v2.096zm-6 1.059c1.172 0 2.118-.946 2.118-2.118S84.172 5.882 83 5.882 80.882 6.828 80.882 8s.946 2.118 2.118 2.118z" transform="translate(-387 -180) translate(310 76) translate(0 102)"/>
-</g>
-</g>
-</g>
-</g>
 </svg>
+                  </div>
                 </button>
               </div>
               <div class="col w-15 md-w-20"><b class="mr-8">INVOICE NUMBER</b></div>
               <div class="col w-40 md-w-30">
-                <button type="button"><b class="mr-8">CUSTOMER</b><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#8892A3">
-<g>
-<g>
+                <button type="button"><b class="mr-8">CUSTOMER</b>
+                  <div class="ic-settings-table"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M89 9.059h-1.539c-.12.494-.31.953-.572 1.362l1.087 1.087-1.482 1.483-1.087-1.087c-.41.254-.868.444-1.348.557V14H81.94v-1.539c-.48-.113-.939-.303-1.348-.557l-1.087 1.087-1.497-1.497 1.087-1.087c-.254-.41-.444-.868-.557-1.348H77V6.962h1.532c.113-.494.31-.953.564-1.37L78.01 4.507l1.483-1.482 1.087 1.087c.41-.262.875-.452 1.362-.572V2h2.118v1.539c.48.113.939.303 1.348.557l1.087-1.087 1.497 1.497-1.087 1.087c.254.416.451.875.564 1.37H89v2.096zm-6 1.059c1.172 0 2.118-.946 2.118-2.118S84.172 5.882 83 5.882 80.882 6.828 80.882 8s.946 2.118 2.118 2.118z" transform="translate(-387 -180) translate(310 76) translate(0 102)"/>
-</g>
-</g>
-</g>
-</g>
 </svg>
+                  </div>
                 </button>
               </div>
               <div class="col w-7"><b>DUE</b></div>
@@ -430,22 +319,14 @@
         <label for="filter_checked1">Created date</label>
       </div>
       <div class="filter_content__fields">
-        <div class="button mb-10">
-          <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+        <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-          </div>
+</svg></i>
           <select class="w-full" name="filter_last">
             <option value="1" selected>is in the last</option>
             <option value="2">is in the last 2</option>
@@ -453,32 +334,18 @@
             <option value="4">is in the last 4</option>
           </select>
         </div>
-        <div class="flex flex-wrap items-center mb-10 ml-10"><svg class="mr-8" xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
-<g fill="none" fill-rule="evenodd">
-<g fill="#635CFF" fill-rule="nonzero">
-<g>
+        <div class="flex flex-wrap items-center mb-10 ml-10"><i class="ic-arrow-right-bottom mr-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
 <path d="M28.352 146.349c.218 0 .437-.09.628-.287l4.471-4.464c.178-.171.28-.41.28-.65 0-.239-.102-.485-.28-.656l-4.477-4.47c-.192-.178-.404-.274-.622-.274-.506 0-.862.362-.862.834 0 .26.11.472.267.629l1.538 1.552 1.777 1.606-1.593-.096h-4.176c-2.051 0-2.79-.84-2.79-2.905 0-.424.028-.738.028-1.012 0-.52-.342-.868-.848-.868-.567 0-.806.438-.875.82-.061.329-.075.698-.075 1.094 0 3.131 1.34 4.621 4.43 4.621h4.306l1.586-.089-1.77 1.6-1.538 1.552c-.157.164-.267.369-.267.629 0 .478.356.834.862.834z" transform="translate(-907 -257) translate(887 122)"/>
-</g>
-</g>
-</g>
-</svg>
+</svg></i>
           <input class="field mr-8" type="text">
-          <div class="button filter-select-days">
-            <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+          <div class="button filter-select-days"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-            </div>
+</svg></i>
             <select name="filter_data">
               <option value="1" selected>days</option>
               <option value="2">days 2</option>
@@ -503,22 +370,14 @@
         <label for="filter_checked2">Card</label>
       </div>
       <div class="filter_content__fields">
-        <div class="button">
-          <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-          </div>
+</svg></i>
           <select class="w-full" name="filter_select_card">
             <option value="1" selected>has an active card</option>
             <option value="2">has an active card 2</option>
@@ -532,22 +391,14 @@
         <label for="filter_checked3">Discount</label>
       </div>
       <div class="filter_content__fields">
-        <div class="button">
-          <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-          </div>
+</svg></i>
           <select class="w-full" name="filter_select_card">
             <option value="1" selected>does not have a discount</option>
             <option value="2">does not have a discount 2</option>
@@ -572,22 +423,14 @@
           <div class="modal__content_wrap">
             <div class="field-set">
               <label class="mb-8 label">Columns</label>
-              <div class="button select-column">
-                <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+              <div class="button select-column"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-                </div>
+</svg></i>
                 <select name="export_s1">
                   <option value="1" selected>Default (9)</option>
                   <option value="2">Default (8)</option>
@@ -640,22 +483,14 @@
                 </div>
                 <div class="field-set mb-24">
                   <label class="mb-8 label">Billing details</label>
-                  <div class="button mb-16">
-                    <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-                    </div>
+</svg></i>
                     <select name="choose_country">
                       <option value="1" selected>Choose a country</option>
                       <option value="2">Choose a country 2</option>
@@ -664,22 +499,14 @@
                     </select>
                   </div>
                   <div class="field field-phone">
-                    <div class="select">
-                      <div class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+                    <div class="select"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-<g stroke="#50576B" stroke-width="1.5">
-<g>
-<g>
-<g>
+<g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
 <path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
 </g>
 </g>
-</g>
-</g>
-</g>
-</svg>
-                      </div>
+</svg></i>
                       <select name="country">
                         <option value="1" selected>CA</option>
                         <option value="2">CA 2</option>

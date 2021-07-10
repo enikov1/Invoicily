@@ -1761,10 +1761,6 @@ body {
   background-size: 100%;
 }
 
-.accordion__item.active .accordion__item-content {
-  display: block;
-}
-
 .what_is_an_invoice {
   padding-bottom: 5rem;
 }
@@ -2536,6 +2532,7 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 7.8125rem;
 }
 
 @media (max-width: 1100px) {
@@ -2546,7 +2543,6 @@ body {
 
 .page_account__sing_in {
   width: 33.75rem;
-  padding-bottom: 8.625rem;
 }
 
 @media (max-width: 600px) {
@@ -2557,7 +2553,6 @@ body {
 
 .page_account__sing_up {
   width: 100%;
-  padding-bottom: 4.875rem;
 }
 
 @media (max-width: 1100px) {

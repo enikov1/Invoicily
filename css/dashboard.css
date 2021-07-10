@@ -366,6 +366,7 @@ body {
   height: 1.75rem;
   background-color: var(--cornflower);
   border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 .aside__header-selected button {
@@ -380,12 +381,6 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.aside__header-selected button img {
-  width: 1.75rem;
-  height: 1.75rem;
-  margin-right: 0.5rem;
 }
 
 .aside__header-selected button span {
@@ -440,24 +435,84 @@ body {
   margin-right: 0.875rem;
 }
 
+.aside__nav ul li a .ic svg {
+  vertical-align: super;
+}
+
+.aside__nav ul li [data-item="home"] .ic {
+  width: 0.9375rem;
+  height: 0.875rem;
+}
+
+.aside__nav ul li [data-item="home"] .ic .ic_path_1 {
+  fill: #A4ACBA;
+}
+
+.aside__nav ul li [data-item="home"] .ic .ic_path_2 {
+  fill: #635CFF;
+}
+
 .aside__nav ul li [data-item="home"]:hover .ic .ic_path_1 {
-  fill: #ADAAFD !important;
+  fill: #ADAAFD;
 }
 
 .aside__nav ul li [data-item="home"]:hover .ic .ic_path_2 {
-  fill: #ADAAFD !important;
+  stroke: #ADAAFD;
+}
+
+.aside__nav ul li [data-item="customers"] .ic {
+  width: 1rem;
+  height: 1rem;
+}
+
+.aside__nav ul li [data-item="customers"] .ic ellipse {
+  fill: white;
+}
+
+.aside__nav ul li [data-item="customers"] .ic .ic_path_1 {
+  fill: #50576B;
+}
+
+.aside__nav ul li [data-item="customers"] .ic .ic_path_2 {
+  fill: white;
 }
 
 .aside__nav ul li [data-item="customers"]:hover .ic #ic1_1 {
-  fill: var(--cornflower) !important;
+  fill: var(--cornflower);
+}
+
+.aside__nav ul li [data-item="billing"] .ic {
+  width: 1rem;
+  height: 0.75rem;
+}
+
+.aside__nav ul li [data-item="billing"] .ic .ic_path_1 {
+  fill: #A4ACBA;
+}
+
+.aside__nav ul li [data-item="billing"] .ic .ic_path_2 {
+  fill: #50576B;
 }
 
 .aside__nav ul li [data-item="billing"]:hover .ic .ic_path_1 {
-  fill: #ADAAFD !important;
+  fill: #ADAAFD;
 }
 
 .aside__nav ul li [data-item="billing"]:hover .ic .ic_path_2 {
-  fill: var(--cornflower) !important;
+  fill: var(--cornflower);
+}
+
+.aside__nav ul li [data-item="coupons"] .ic {
+  width: 0.875rem;
+  height: 0.5rem;
+}
+
+.aside__nav ul li [data-item="coupons"] .ic .ic_path_1 {
+  fill: #50576B;
+}
+
+.aside__nav ul li [data-item="coupons"] .ic .ic_path_2 {
+  fill: #A4ACBA;
 }
 
 .aside__nav ul li [data-item="coupons"]:hover .ic .ic_path_1 {
@@ -512,6 +567,19 @@ body {
   background-color: var(--cornflower);
 }
 
+.aside__nav ul li [data-item="reports"] .ic {
+  width: 1rem;
+  height: 1rem;
+}
+
+.aside__nav ul li [data-item="reports"] .ic .ic_path_1 {
+  fill: #A4ACBA;
+}
+
+.aside__nav ul li [data-item="reports"] .ic .ic_path_2 {
+  fill: #50576B;
+}
+
 .aside__nav ul li [data-item="reports"]:hover .ic .ic_path_1 {
   fill: #ADAAFD;
 }
@@ -520,8 +588,30 @@ body {
   fill: var(--cornflower);
 }
 
+.aside__nav ul li [data-item="settings"] .ic {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.aside__nav ul li [data-item="settings"] .ic .ic_path_1 {
+  fill: #50576B;
+}
+
 .aside__nav ul li [data-item="settings"]:hover .ic .ic_path_1 {
   fill: var(--cornflower);
+}
+
+.aside__nav ul li [data-item="account"] .ic {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.aside__nav ul li [data-item="account"] .ic .ic_path_1 {
+  fill: #A4ACBA;
+}
+
+.aside__nav ul li [data-item="account"] .ic .ic_path_2 {
+  fill: #50576B;
 }
 
 .aside__nav ul li [data-item="account"]:hover .ic .ic_path_1 {
@@ -538,11 +628,11 @@ body {
 }
 
 .aside__nav ul li.active [data-item="home"] .ic .ic_path_1 {
-  fill: #ADAAFD !important;
+  fill: #ADAAFD;
 }
 
 .aside__nav ul li.active [data-item="home"] .ic .ic_path_2 {
-  fill: #ADAAFD !important;
+  stroke: #635CFF;
 }
 
 .aside__nav ul li.active [data-item="customers"] .ic #ic1_1 {
@@ -700,23 +790,35 @@ body {
           align-items: center;
 }
 
-.header__right .button__item:hover .ic svg {
-  fill: var(--cornflower);
+.header__right .button__item svg {
+  vertical-align: super;
 }
 
-.header__right .button__item:hover .ic svg path, .header__right .button__item:hover .ic svg g {
-  -webkit-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
+.header__right .button__item svg path {
+  fill: #8892A3;
+}
+
+.header__right .button__item .ic-feedback {
+  width: 1rem;
+  height: 1rem;
+}
+
+.header__right .button__item .ic-notifications {
+  width: 0.875rem;
+  height: 1rem;
+}
+
+.header__right .button__item .ic-question {
+  width: 1rem;
+  height: 1rem;
+}
+
+.header__right .button__item:hover .ic svg path {
   fill: var(--cornflower);
 }
 
 .header__right .button__item:hover span {
   color: var(--cornflower);
-}
-
-.header__right .button__item .ic {
-  padding-top: 0.25rem;
 }
 
 .header__right .button__item span {
@@ -822,7 +924,6 @@ body {
 
 .table__rows .row {
   position: relative;
-  padding: 0.75rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -843,8 +944,8 @@ body {
 
 .table__rows .row .other_list {
   position: absolute;
-  top: 0.6875rem;
-  right: 0.5rem;
+  top: 0.4375rem;
+  right: 0.25rem;
   height: 1.5rem;
   opacity: 0;
 }
@@ -874,6 +975,7 @@ body {
           align-items: center;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  height: 2.3125rem;
 }
 
 .table__rows .row .col .ic-reload {
@@ -893,6 +995,17 @@ body {
 .table__rows .row .col span {
   color: #3e4559;
   letter-spacing: 0.5px;
+}
+
+.table__rows .row .col button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .table__rows .row .col.w-1 {
@@ -1528,7 +1641,7 @@ body {
   width: calc(100% - 0.1250rem) !important;
 }
 
-.button svg {
+.button i {
   margin-right: 0.5rem;
 }
 
@@ -1786,7 +1899,7 @@ body {
   height: auto;
 }
 
-.box-icon svg {
+.box-icon i {
   margin-right: 0;
 }
 
@@ -1956,7 +2069,11 @@ body {
   border: 0.0625rem solid var(--border-color);
   z-index: 100;
   background-color: #f7fafc;
-  display: none;
+  -webkit-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .filter_content__header {
@@ -2073,7 +2190,8 @@ body {
 }
 
 .filter_content.active {
-  display: block;
+  opacity: 1;
+  pointer-events: visible;
 }
 
 .modal {
@@ -2083,7 +2201,11 @@ body {
   width: 100%;
   height: 100%;
   z-index: 100;
-  display: none;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal__overlay {
@@ -2246,7 +2368,8 @@ body {
 }
 
 .modal.active {
-  display: block;
+  opacity: 1;
+  pointer-events: visible;
 }
 
 .field-phone {
@@ -2730,4 +2853,130 @@ body {
 
 .field-multi .text {
   color: var(--slate-two);
+}
+
+svg {
+  vertical-align: super;
+}
+
+.ic-info {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ic-info svg path {
+  fill: #8892A3;
+}
+
+.ic-search {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.ic-calendar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.ic-calendar svg path {
+  fill: #50576B;
+}
+
+.ic-settings {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.ic-settings svg path {
+  fill: #50576B;
+}
+
+.ic-settings-table {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.ic-settings-table svg path {
+  fill: #8892A3;
+}
+
+.ic-filter {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.ic-filter svg path {
+  fill: #50576B;
+}
+
+.ic-export {
+  width: 0.5625rem;
+  height: 0.75rem;
+}
+
+.ic-export svg path {
+  fill: #50576B;
+}
+
+.ic-arrow {
+  width: 0.625rem;
+  height: 0.875rem;
+}
+
+.ic-arrow svg path {
+  stroke: #50576B;
+}
+
+.ic-arrow-right-bottom {
+  width: 0.875rem;
+  height: 0.75rem;
+}
+
+.ic-arrow-right-bottom svg path {
+  fill: #635CFF;
+}
+
+.ic-arrow-right {
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.ic-arrow-right svg path {
+  stroke: white;
+}
+
+.ic-close {
+  width: 0.6875rem;
+  height: 0.6875rem;
+}
+
+.ic-close svg path {
+  stroke: #8892A3;
+}
+
+.ic-close-form {
+  width: 0.6875rem;
+  height: 0.6875rem;
+}
+
+.ic-close-form svg path {
+  stroke: #8892A3;
+}
+
+.ic-plus {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.ic-plus svg path {
+  fill: #50576B;
+}
+
+.ic-copy {
+  width: 0.625rem;
+  height: 0.6875rem;
+}
+
+.ic-copy svg path {
+  fill: #3C4357;
 }
