@@ -189,6 +189,8 @@ if(checkbox_all_button) {
 const filter = document.querySelector('._js_filter');
 const filter_data = filter.getAttribute('data-toggle');
 const filter_content = document.querySelector(`[data-content=${filter_data}]`);
+let count = 0;
+
 if(filter) {
 	filter.addEventListener('click', (event) => {
 		
@@ -221,7 +223,6 @@ if(filter) {
 
 	const checkbox_filter_button = document.querySelectorAll('.filter_content__section input');
 	const count_elem = document.querySelector('#filter_count');
-	let count = 0;
 
 	checkbox_filter_button.forEach((e, i) => {
 
@@ -245,6 +246,32 @@ if(filter) {
 
 			count_elem.innerHTML = count;
 		});
+	});
+}
+
+// clear filter
+
+const button_clear = document.querySelector('#filter_clear');
+
+if(button_clear) {
+
+	const checkbox = document.querySelectorAll('.filter_content input');
+
+
+	button_clear.addEventListener('click', () => {
+
+		checkbox.forEach(e => {
+			e.value = '';
+			e.checked = false; 
+		})
+
+		document.querySelectorAll('.filter_content__fields').forEach(e => slideUp(e, 300));
+
+		document.querySelector('#filter_count').innerHTML = '0';
+		document.querySelector('#filter_count').classList.add('hide');
+
+		count = 0;
+
 	});
 }
 
