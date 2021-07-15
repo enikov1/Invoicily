@@ -129,7 +129,7 @@
           <div class="table__header">
             <h1>Invoices</h1>
             <div class="flex flex-wrap items-center">
-              <button class="button ml-8" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+              <button class="button ml-8 _js_filter" type="button" data-toggle="filter2"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M11.437 0H.563c-.5 0-.752.606-.398.96L4.5 5.295v4.83c0 .184.09.356.24.46l1.875 1.313c.37.259.885-.004.885-.461V5.295L11.835.96c.353-.353.103-.96-.398-.96z" transform="translate(-1072 -93) translate(1056 84) translate(16 9)"/>
 </svg></i><span>Filter</span><span class="count">1</span></button>
               <button class="button ml-8" type="button" data-role="modal_export"><i class="ic-export"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 12">
@@ -309,16 +309,57 @@
         </div>
       </div>
     </div>
-    <div class="filter_content" data-content="filter">
+    <div class="filter_content" data-content="filter2">
       <div class="filter_content__header">
         <button class="button" type="button"><span>Clear</span></button><b>Filters</b>
         <button class="button button-blue" type="button"><span>Done</span></button>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked1" id="filter_checked1">
-        <label for="filter_checked1">Created date</label>
+        <input type="checkbox" name="filter_checked1" id="filter_checked1" data-target="section1">
+        <label for="filter_checked1">Frequency</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section1">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_select_card">
+            <option value="1" selected>Subscription invoice</option>
+            <option value="2">One-off invoice</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter_content__section">
+        <input type="checkbox" name="filter_checked2" id="filter_checked2" data-target="section2">
+        <label for="filter_checked2">Status</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section2">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_select_card">
+            <option value="1" selected>Draft</option>
+            <option value="2">Open</option>
+            <option value="3">Paid</option>
+            <option value="4">Void</option>
+            <option value="5">Uncollectible</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter_content__section">
+        <input type="checkbox" name="filter_checked3" id="filter_checked3" data-target="section3">
+        <label for="filter_checked3">Created</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section3">
         <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -366,11 +407,11 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked2" id="filter_checked2">
-        <label for="filter_checked2">Card</label>
+        <input type="checkbox" name="filter_checked4" id="filter_checked4" data-target="section4">
+        <label for="filter_checked4">Due date</label>
       </div>
-      <div class="filter_content__fields">
-        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+      <div class="filter_content__fields" data-toggle="section4">
+        <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
@@ -378,20 +419,18 @@
 </g>
 </g>
 </svg></i>
-          <select class="w-full" name="filter_select_card">
-            <option value="1" selected>has an active card</option>
-            <option value="2">has an active card 2</option>
-            <option value="3">has an active card 3</option>
-            <option value="4">has an active card 4</option>
+          <select class="w-full" name="filter_last">
+            <option value="1" selected>is in the last</option>
+            <option value="2">is in the last 2</option>
+            <option value="3">is in the last 3</option>
+            <option value="4">is in the last 4</option>
           </select>
         </div>
-      </div>
-      <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked3" id="filter_checked3">
-        <label for="filter_checked3">Discount</label>
-      </div>
-      <div class="filter_content__fields">
-        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+        <div class="flex flex-wrap items-center mb-10 ml-10"><i class="ic-arrow-right-bottom mr-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
+<path d="M28.352 146.349c.218 0 .437-.09.628-.287l4.471-4.464c.178-.171.28-.41.28-.65 0-.239-.102-.485-.28-.656l-4.477-4.47c-.192-.178-.404-.274-.622-.274-.506 0-.862.362-.862.834 0 .26.11.472.267.629l1.538 1.552 1.777 1.606-1.593-.096h-4.176c-2.051 0-2.79-.84-2.79-2.905 0-.424.028-.738.028-1.012 0-.52-.342-.868-.848-.868-.567 0-.806.438-.875.82-.061.329-.075.698-.075 1.094 0 3.131 1.34 4.621 4.43 4.621h4.306l1.586-.089-1.77 1.6-1.538 1.552c-.157.164-.267.369-.267.629 0 .478.356.834.862.834z" transform="translate(-907 -257) translate(887 122)"/>
+</svg></i>
+          <input class="field mr-8" type="text">
+          <div class="button filter-select-days"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
 <path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
@@ -399,21 +438,107 @@
 </g>
 </g>
 </svg></i>
-          <select class="w-full" name="filter_select_card">
-            <option value="1" selected>does not have a discount</option>
-            <option value="2">does not have a discount 2</option>
-            <option value="3">does not have a discount 3</option>
-            <option value="4">does not have a discount 4</option>
+            <select name="filter_data">
+              <option value="1" selected>days</option>
+              <option value="2">days 2</option>
+              <option value="3">days 3</option>
+              <option value="4">days 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex flex-wrap"><span class="light-text mr-16">Time zone:</span>
+          <div class="field-set mr-10">
+            <input class="mr-10" type="radio" name="radio1" id="radio1">
+            <label for="radio1">GMT-4</label>
+          </div>
+          <div class="field-set">
+            <input class="mr-10" type="radio" name="radio1" id="radio2">
+            <label for="radio2">UTC</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter_content__section">
+        <input type="checkbox" name="filter_checked5" id="filter_checked5" data-target="section5">
+        <label for="filter_checked5">Amount</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section5">
+        <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_last">
+            <option value="1" selected>is in the last</option>
+            <option value="2">is in the last 2</option>
+            <option value="3">is in the last 3</option>
+            <option value="4">is in the last 4</option>
+          </select>
+        </div>
+        <div class="flex flex-wrap items-center mb-10 ml-10"><i class="ic-arrow-right-bottom mr-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
+<path d="M28.352 146.349c.218 0 .437-.09.628-.287l4.471-4.464c.178-.171.28-.41.28-.65 0-.239-.102-.485-.28-.656l-4.477-4.47c-.192-.178-.404-.274-.622-.274-.506 0-.862.362-.862.834 0 .26.11.472.267.629l1.538 1.552 1.777 1.606-1.593-.096h-4.176c-2.051 0-2.79-.84-2.79-2.905 0-.424.028-.738.028-1.012 0-.52-.342-.868-.848-.868-.567 0-.806.438-.875.82-.061.329-.075.698-.075 1.094 0 3.131 1.34 4.621 4.43 4.621h4.306l1.586-.089-1.77 1.6-1.538 1.552c-.157.164-.267.369-.267.629 0 .478.356.834.862.834z" transform="translate(-907 -257) translate(887 122)"/>
+</svg></i>
+          <input class="field mr-8" type="text" value="0">
+        </div>
+      </div>
+      <div class="filter_content__section">
+        <input type="checkbox" name="filter_checked6" id="filter_checked6" data-target="section6">
+        <label for="filter_checked6">Collection method</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section6">
+        <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_last">
+            <option value="1" selected>Charged to payment method on file</option>
+            <option value="2">Emailed to customer</option>
           </select>
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked4" id="filter_checked4">
-        <label for="filter_checked4">Delinquent</label>
+        <input type="checkbox" name="filter_checked7" id="filter_checked7" data-target="section7">
+        <label for="filter_checked7">Attempted</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section7">
+        <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_last">
+            <option value="1" selected>Attempted</option>
+            <option value="2">Unattempted</option>
+          </select>
+        </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked5" id="filter_checked5">
-        <label for="filter_checked5">Email</label>
+        <input type="checkbox" name="filter_checked8" id="filter_checked8" data-target="section8">
+        <label for="filter_checked8">Automatic collection</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section8">
+        <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_last">
+            <option value="1" selected>On</option>
+            <option value="2">Off</option>
+          </select>
+        </div>
       </div>
     </div>
     <div class="modal" data-toggle="modal_export">

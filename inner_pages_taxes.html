@@ -101,7 +101,7 @@
           <div class="table__header">
             <h1>Tax rates</h1>
             <div class="flex flex-wrap items-center">
-              <button class="button ml-8" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+              <button class="button ml-8 _js_filter" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M11.437 0H.563c-.5 0-.752.606-.398.96L4.5 5.295v4.83c0 .184.09.356.24.46l1.875 1.313c.37.259.885-.004.885-.461V5.295L11.835.96c.353-.353.103-.96-.398-.96z" transform="translate(-1072 -93) translate(1056 84) translate(16 9)"/>
 </svg></i><span>Filter</span></button>
               <button class="button ml-8" type="button" data-role="modal_add_taxes"><i class="ic-plus"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
@@ -308,10 +308,10 @@
         <button class="button button-blue" type="button"><span>Done</span></button>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked1" id="filter_checked1">
+        <input type="checkbox" name="filter_checked1" id="filter_checked1" data-target="section1">
         <label for="filter_checked1">Created date</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section1">
         <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -359,10 +359,10 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked2" id="filter_checked2">
+        <input type="checkbox" name="filter_checked2" id="filter_checked2" data-target="section2">
         <label for="filter_checked2">Card</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section2">
         <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -380,10 +380,10 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked3" id="filter_checked3">
+        <input type="checkbox" name="filter_checked3" id="filter_checked3" data-target="section3">
         <label for="filter_checked3">Discount</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section3">
         <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -401,12 +401,32 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked4" id="filter_checked4">
+        <input type="checkbox" name="filter_checked4" id="filter_checked4" data-target="section4">
         <label for="filter_checked4">Delinquent</label>
       </div>
+      <div class="filter_content__fields" data-toggle="section4">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_select_card">
+            <option value="1" selected>is delinquent</option>
+            <option value="2">is paid up</option>
+          </select>
+        </div>
+      </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked5" id="filter_checked5">
+        <input type="checkbox" name="filter_checked5" id="filter_checked5" data-target="section5">
         <label for="filter_checked5">Email</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section5">
+        <div class="field-row"><span class="label light-text">is equal to</span>
+          <input class="field" type="text">
+        </div>
       </div>
     </div>
     <div class="modal" data-toggle="modal_export">

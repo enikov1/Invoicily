@@ -101,10 +101,10 @@
           <div class="table__header">
             <h1>Customers</h1>
             <div class="flex flex-wrap items-center">
-              <button class="button ml-8" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+              <button class="button ml-8 _js_filter" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M11.437 0H.563c-.5 0-.752.606-.398.96L4.5 5.295v4.83c0 .184.09.356.24.46l1.875 1.313c.37.259.885-.004.885-.461V5.295L11.835.96c.353-.353.103-.96-.398-.96z" transform="translate(-1072 -93) translate(1056 84) translate(16 9)"/>
 </svg></i><span>Filter</span></button>
-              <button class="button ml-8" type="button" data-role="modal_export"><i class="ic-export"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 12">
+              <button class="button ml-8" type="button" data-role="modal_export2"><i class="ic-export"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 12">
 <path d="M5.25 3.188V0H.562C.252 0 0 .25 0 .563v10.874c0 .312.25.563.563.563h7.875c.311 0 .562-.25.562-.563V3.75H5.812c-.309 0-.562-.253-.562-.563zM7.042 8.14l-2.26 2.243c-.156.155-.408.155-.563 0l-2.26-2.243c-.238-.236-.071-.641.263-.641H3.75V5.625c0-.207.168-.375.375-.375h.75c.207 0 .375.168.375.375V7.5h1.528c.334 0 .501.405.264.641zm1.794-5.68L6.54.164C6.436.06 6.293 0 6.143 0H6v3h3v-.143c0-.148-.059-.29-.164-.396z" transform="translate(-1166 -93) translate(1056 84) translate(92) translate(18 9)"/>
 </svg></i><span>Export</span></button>
               <button class="button button-blue ml-8" type="button" data-role="modal_add_customer"><i class="ic-plus mr-10"></i><span>Add customer</span></button>
@@ -304,10 +304,10 @@
         <button class="button button-blue" type="button"><span>Done</span></button>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked1" id="filter_checked1">
+        <input type="checkbox" name="filter_checked1" id="filter_checked1" data-target="section1">
         <label for="filter_checked1">Created date</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section1">
         <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -355,10 +355,10 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked2" id="filter_checked2">
+        <input type="checkbox" name="filter_checked2" id="filter_checked2" data-target="section2">
         <label for="filter_checked2">Card</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section2">
         <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -376,10 +376,10 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked3" id="filter_checked3">
+        <input type="checkbox" name="filter_checked3" id="filter_checked3" data-target="section3">
         <label for="filter_checked3">Discount</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section3">
         <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -397,19 +397,87 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked4" id="filter_checked4">
+        <input type="checkbox" name="filter_checked4" id="filter_checked4" data-target="section4">
         <label for="filter_checked4">Delinquent</label>
       </div>
+      <div class="filter_content__fields" data-toggle="section4">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_select_card">
+            <option value="1" selected>is delinquent</option>
+            <option value="2">is paid up</option>
+          </select>
+        </div>
+      </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked5" id="filter_checked5">
+        <input type="checkbox" name="filter_checked5" id="filter_checked5" data-target="section5">
         <label for="filter_checked5">Email</label>
       </div>
+      <div class="filter_content__fields" data-toggle="section5">
+        <div class="field-row"><span class="label light-text">is equal to</span>
+          <input class="field" type="text">
+        </div>
+      </div>
     </div>
-    <div class="modal" data-toggle="modal_export">
+    <div class="modal" data-toggle="modal_export2">
       <div class="modal__overlay">
         <div class="modal__content">
           <div class="modal__content_header"><span class="text">Export customers</span></div>
-          <div class="modal__content_wrap">
+          <div class="modal__content_wrap" data-simplebar>
+            <div class="field-set mb-24">
+              <label class="mb-8 label">Time zone</label>
+              <div class="flex flex-wrap">
+                <div class="flex items-center mr-24">
+                  <input class="mr-8" type="radio" name="add_radio1" id="add_radio1" checked>
+                  <label for="add_radio1">GMT-4 (UTC-04:00)</label>
+                </div>
+                <div class="flex items-center">
+                  <input class="mr-8" type="radio" name="add_radio1" id="add_radio2">
+                  <label for="add_radio2">UTC</label>
+                </div>
+              </div>
+            </div>
+            <div class="field-set mb-24">
+              <label class="mb-8 label">Date range</label>
+              <div class="flex flex-wrap">
+                <div class="w-45">
+                  <div class="flex items-center mb-8">
+                    <input class="label-trigger mr-8" type="radio" name="add_radio3" id="add_radio3" data-label-trigger="label1" checked>
+                    <label for="add_radio3">Today</label>
+                  </div>
+                  <div class="flex items-center mb-8">
+                    <input class="label-trigger mr-8" type="radio" name="add_radio3" id="add_radio4" data-label-trigger="label2">
+                    <label for="add_radio4">Current month</label>
+                  </div>
+                  <div class="flex items-center mb-8">
+                    <input class="label-trigger mr-8" type="radio" name="add_radio3" id="add_radio5" data-label-trigger="label3">
+                    <label for="add_radio5">Previous 7 days</label>
+                  </div>
+                  <div class="flex items-center mb-8">
+                    <input class="label-trigger mr-8" type="radio" name="add_radio3" id="add_radio6" data-label-trigger="label4">
+                    <label for="add_radio6">Previous month</label>
+                  </div>
+                  <div class="flex items-center mb-8">
+                    <input class="label-trigger mr-8" type="radio" name="add_radio3" id="add_radio7" data-label-trigger="">
+                    <label for="add_radio7">All</label>
+                  </div>
+                  <div class="flex items-center mb-8">
+                    <input class="label-trigger mr-8" type="radio" name="add_radio3" id="add_radio8" data-label-trigger="">
+                    <label for="add_radio8">Custom</label>
+                  </div>
+                  <div class="custom-field hide">
+                    <input class="field ml-8" type="text">
+                  </div>
+                </div>
+                <div class="flex flex-col"><span class="mb-8 light-text c-slate" data-label-event="label1">Jul 15</span><span class="mb-8 light-text" data-label-event="label2">Jul 1 – Jul 15</span><span class="mb-8 light-text" data-label-event="label3">Jul 8 – Jul 14</span><span class="mb-8 light-text" data-label-event="label4">Jun 1 – Jun 30</span></div>
+              </div>
+            </div>
             <div class="field-set">
               <label class="mb-8 label">Columns</label>
               <div class="button select-column"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
@@ -420,15 +488,153 @@
 </g>
 </g>
 </svg></i>
-                <select name="export_s1">
-                  <option value="1" selected>Default (9)</option>
-                  <option value="2">Default (8)</option>
-                  <option value="3">Default (7)</option>
-                  <option value="4">Default (6)</option>
+                <select name="export_s1" id="export_columns">
+                  <option value="default" selected>Default (6)</option>
+                  <option value="all">All columns (31)</option>
+                  <option value="custom">Custom</option>
                 </select>
               </div>
             </div>
-            <p class="mt-16">ID, Description, Email, Created (UTC), Card ID, Top Customer Position, Total Payment Count, Total Payment Amount, Total Payment Currency</p>
+            <div class="field-select-tabs active">
+              <p class="mt-16">ID, Description, Email, Name, Created (UTC), Card ID</p>
+            </div>
+            <div class="field-select-tabs">
+              <p class="mt-16">ID, Description, Email, Name, Created (UTC), Delinquent, Card ID, Card Last4, Card Brand, Card Funding, Card Exp Month, Card Exp Year, Card Name, Card Address Line1, Card Address Line2, Card Address City, Card Address State, Card Address Country, Card Address Zip, Card Issue Country, Card Fingerprint, Card CVC Status, Card AVS Zip Status, Card AVS Line1 Status, Card Tokenization Method, Plan, Status, Cancel At Period End, Account Balance, Currency, Business Vat ID</p>
+            </div>
+            <div class="field-select-tabs">
+              <div class="flex flex-wrap mt-16"> 
+                <div class="flex flex-col mr-24">
+                  <div class="flex items-center">
+                    <input class="mr-8" type="checkbox" name="custom_radio1" id="custom_radio1">
+                    <label for="custom_radio1">ID</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio1" id="custom_radio2">
+                    <label for="custom_radio2">Description</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio3" id="custom_radio3">
+                    <label for="custom_radio3">Email</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio4" id="custom_radio4">
+                    <label for="custom_radio4">Name</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio5" id="custom_radio5">
+                    <label for="custom_radio5">Created (UTC)</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio6" id="custom_radio6">
+                    <label for="custom_radio6">Delinquent</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio7" id="custom_radio7">
+                    <label for="custom_radio7">Card ID</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio8" id="custom_radio8">
+                    <label for="custom_radio8">Card Last4</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio9" id="custom_radio9">
+                    <label for="custom_radio9">Card Brand</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio10" id="custom_radio10">
+                    <label for="custom_radio10">Card Funding</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio11" id="custom_radio11">
+                    <label for="custom_radio11">Card Exp Month</label>
+                  </div>
+                </div>
+                <div class="flex flex-col mr-24">
+                  <div class="flex items-center">
+                    <input class="mr-8" type="checkbox" name="custom_radio1" id="custom_radio12">
+                    <label for="custom_radio12">Card Exp Year</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio1" id="custom_radio13">
+                    <label for="custom_radio13">Card Name</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio3" id="custom_radio14">
+                    <label for="custom_radio14">Card Address Line1</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio4" id="custom_radio15">
+                    <label for="custom_radio15">Card Address Line2</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio5" id="custom_radio16">
+                    <label for="custom_radio16">Card Address City</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio6" id="custom_radio17">
+                    <label for="custom_radio17">Card Address State</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio7" id="custom_radio18">
+                    <label for="custom_radio18">Card Address Country</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio8" id="custom_radio19">
+                    <label for="custom_radio19">Card Address Zip</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio9" id="custom_radio20">
+                    <label for="custom_radio20">Card Issue Country</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio10" id="custom_radio21">
+                    <label for="custom_radio21">Card Fingerprint</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio11" id="custom_radio22">
+                    <label for="custom_radio22">Card CVC Status</label>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center">
+                    <input class="mr-8" type="checkbox" name="custom_radio1" id="custom_radio23">
+                    <label for="custom_radio23">Card AVS Zip Status</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio1" id="custom_radio24">
+                    <label for="custom_radio24">Card AVS Line1 Status</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio3" id="custom_radio25">
+                    <label for="custom_radio25">Card Tokenization Method</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio4" id="custom_radio26">
+                    <label for="custom_radio26">Plan</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio5" id="custom_radio27">
+                    <label for="custom_radio27">Status</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio6" id="custom_radio28">
+                    <label for="custom_radio28">Cancel At Period End</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio7" id="custom_radio29">
+                    <label for="custom_radio29">Account Balance</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio8" id="custom_radio30">
+                    <label for="custom_radio30">Currency</label>
+                  </div>
+                  <div class="flex items-center mt-8">
+                    <input class="mr-8" type="checkbox" name="custom_radio9" id="custom_radio31">
+                    <label for="custom_radio31">Business Vat ID</label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="modal__content_foot">
             <button class="button mr-8 close__modal" type="button"><span>Cancel</span></button>
@@ -511,6 +717,167 @@
                     <input class="mr-16" type="checkbox" name="checkbox1" id="checkbox2">
                     <label for="checkbox2">Same as billing details</label>
                   </div>
+                </div>
+                <div class="field-set mb-24">
+                  <label class="mb-8 label">Name</label>
+                  <input class="field" type="text" placeholder="Jane Doe">
+                </div>
+                <div class="field-set mb-24">
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a country</option>
+                      <option value="2">Choose a country 2</option>
+                      <option value="3">Choose a country 3</option>
+                      <option value="4">Choose a country 3</option>
+                    </select>
+                  </div>
+                  <div class="field field-phone">
+                    <div class="select"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                      <select name="country">
+                        <option value="1" selected>CA</option>
+                        <option value="2">CA 2</option>
+                        <option value="2">CA 3</option>
+                        <option value="2">CA 4</option>
+                      </select>
+                    </div><b class="field-phone__selected">+1</b>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <label class="mb-8 label">Time zone</label>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a time zone…</option>
+                      <option value="2">Choose a time zone… 2</option>
+                      <option value="3">Choose a time zone… 3</option>
+                      <option value="4">Choose a time zone… 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <label class="mb-8 label">Language</label>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a language…</option>
+                      <option value="2">Choose a language… 2</option>
+                      <option value="3">Choose a language… 3</option>
+                      <option value="4">Choose a language… 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <div class="flex items-center mb-8">
+                    <label class="label">Currency</label><i class="ic-info ml-8 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
+</svg></i>
+                  </div>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a currency…</option>
+                      <option value="2">Choose a currency… 2</option>
+                      <option value="3">Choose a currency… 3</option>
+                      <option value="4">Choose a currency… 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <div class="flex items-center mb-8">
+                    <label class="label">Invoice prefix</label><i class="ic-info ml-8 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
+</svg></i>
+                  </div>
+                  <input class="field" type="text">
+                </div>
+                <div class="field-set mb-24">
+                  <div class="flex items-center mb-8">
+                    <label class="label">Next invoice sequence</label><i class="ic-info ml-8 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
+</svg></i>
+                  </div>
+                  <input class="field" type="text" value="1">
+                </div>
+                <div class="field-set mb-24">
+                  <label class="label mb-8">Tax status</label>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Taxable</option>
+                      <option value="2">Exempt</option>
+                      <option value="3">Reverse charge</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set">
+                  <label class="label mb-8">Tax ID</label>
+                  <div class="field-col-3 mb-8">
+                    <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                      <select name="choose_country">
+                        <option value="1" selected>ID type</option>
+                        <option value="2">ID type 2</option>
+                        <option value="3">ID type 3</option>
+                      </select>
+                    </div>
+                    <input class="field" type="text">
+                    <button type="button">
+                      <div class="ic-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round">
+<g stroke-width="1.5">
+<path d="M4.596 -1.404L4.596 10.596" transform="translate(-1385 -111) translate(290 74) translate(1096 38) rotate(-45 4.596 4.596)"/>
+<path d="M4.596 -1.404L4.596 10.596" transform="translate(-1385 -111) translate(290 74) translate(1096 38) rotate(-135 4.596 4.596)"/>
+</g>
+</g>
+</svg>
+                      </div>
+                    </button>
+                  </div><a href="#">Add another ID </a>
                 </div>
               </div>
             </div>

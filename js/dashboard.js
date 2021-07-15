@@ -186,8 +186,9 @@ if(checkbox_all_button) {
 
 // toggle
 
-const filter = document.querySelector('[data-toggle=filter]');
-const filter_content = document.querySelector('[data-content=filter]');
+const filter = document.querySelector('._js_filter');
+const filter_data = filter.getAttribute('data-toggle');
+const filter_content = document.querySelector(`[data-content=${filter_data}]`);
 if(filter) {
 	filter.addEventListener('click', (event) => {
 		
@@ -216,6 +217,25 @@ if(filter) {
 				fadeOut(filter_content);
 			}
 		}
+	});
+
+	let checkbox_filter_button = document.querySelectorAll('.filter_content__section input');
+
+	checkbox_filter_button.forEach(e => {
+		e.addEventListener('input', (event) => {
+			let _target = event.target;
+			let data_target = _target.getAttribute('data-target');
+
+			_target.setAttribute('disabled', true);
+
+			setTimeout(() => {
+				_target.removeAttribute('disabled');
+			}, 300);
+
+			slideToggle(document.querySelector(`.filter_content__fields[data-toggle=${data_target}]`), 300);
+
+			
+		});
 	});
 }
 
@@ -713,3 +733,44 @@ if(field_fixed) {
 	});
 }
 
+// export custom active
+
+const custom_checked = document.querySelectorAll('.label-trigger');
+const custom_field = document.querySelector('.custom-field');
+
+custom_checked.forEach(e => {
+	e.addEventListener('change', () => {
+		(e.id == 'add_radio8') ? custom_field.classList.remove('hide') : custom_field.classList.add('hide');
+	});
+});
+
+// export date range
+
+const input_radio = document.querySelectorAll('input[data-label-trigger]');
+
+const siblings = el => [].slice.call(el.parentNode.children).filter(child => (child !== el));
+
+input_radio.forEach(input => {
+	input.addEventListener('input', () => {
+		const label = (input.getAttribute('data-label-trigger') != '') ? document.querySelector(`[data-label-event=${input.getAttribute('data-label-trigger')}]`) : null;
+
+		(label) && label.classList.add('c-slate');
+
+		if(label) {
+			siblings(label).forEach((el) => {
+				el.classList.remove('c-slate');
+			});
+		} else {
+			document.querySelectorAll('[data-label-event]').forEach(e => {e.classList.remove('c-slate')})
+		}
+		
+	});
+});
+
+// export columns
+
+document.querySelector('#export_columns').addEventListener('change', function() {
+	document.querySelectorAll('.field-select-tabs').forEach((n, i) => {
+		n.classList.toggle('active', i === this.selectedIndex);
+	});
+});

@@ -101,7 +101,7 @@
           <div class="table__header">
             <h1>Coupons</h1>
             <div class="flex flex-wrap items-center">
-              <button class="button ml-8" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+              <button class="button ml-8 _js_filter" type="button" data-toggle="filter"><i class="ic-filter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 <path d="M11.437 0H.563c-.5 0-.752.606-.398.96L4.5 5.295v4.83c0 .184.09.356.24.46l1.875 1.313c.37.259.885-.004.885-.461V5.295L11.835.96c.353-.353.103-.96-.398-.96z" transform="translate(-1072 -93) translate(1056 84) translate(16 9)"/>
 </svg></i><span>Filter</span></button>
               <button class="button ml-8" type="button"><i class="ic-plus"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
@@ -229,10 +229,10 @@
         <button class="button button-blue" type="button"><span>Done</span></button>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked1" id="filter_checked1">
+        <input type="checkbox" name="filter_checked1" id="filter_checked1" data-target="section1">
         <label for="filter_checked1">Created date</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section1">
         <div class="button mb-10"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -280,10 +280,10 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked2" id="filter_checked2">
+        <input type="checkbox" name="filter_checked2" id="filter_checked2" data-target="section2">
         <label for="filter_checked2">Card</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section2">
         <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -301,10 +301,10 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked3" id="filter_checked3">
+        <input type="checkbox" name="filter_checked3" id="filter_checked3" data-target="section3">
         <label for="filter_checked3">Discount</label>
       </div>
-      <div class="filter_content__fields">
+      <div class="filter_content__fields" data-toggle="section3">
         <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
 <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
 <g stroke-width="1.5">
@@ -322,12 +322,32 @@
         </div>
       </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked4" id="filter_checked4">
+        <input type="checkbox" name="filter_checked4" id="filter_checked4" data-target="section4">
         <label for="filter_checked4">Delinquent</label>
       </div>
+      <div class="filter_content__fields" data-toggle="section4">
+        <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+          <select class="w-full" name="filter_select_card">
+            <option value="1" selected>is delinquent</option>
+            <option value="2">is paid up</option>
+          </select>
+        </div>
+      </div>
       <div class="filter_content__section">
-        <input type="checkbox" name="filter_checked5" id="filter_checked5">
+        <input type="checkbox" name="filter_checked5" id="filter_checked5" data-target="section5">
         <label for="filter_checked5">Email</label>
+      </div>
+      <div class="filter_content__fields" data-toggle="section5">
+        <div class="field-row"><span class="label light-text">is equal to</span>
+          <input class="field" type="text">
+        </div>
       </div>
     </div>
     <div class="modal" data-toggle="modal_export">
@@ -436,6 +456,167 @@
                     <input class="mr-16" type="checkbox" name="checkbox1" id="checkbox2">
                     <label for="checkbox2">Same as billing details</label>
                   </div>
+                </div>
+                <div class="field-set mb-24">
+                  <label class="mb-8 label">Name</label>
+                  <input class="field" type="text" placeholder="Jane Doe">
+                </div>
+                <div class="field-set mb-24">
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a country</option>
+                      <option value="2">Choose a country 2</option>
+                      <option value="3">Choose a country 3</option>
+                      <option value="4">Choose a country 3</option>
+                    </select>
+                  </div>
+                  <div class="field field-phone">
+                    <div class="select"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                      <select name="country">
+                        <option value="1" selected>CA</option>
+                        <option value="2">CA 2</option>
+                        <option value="2">CA 3</option>
+                        <option value="2">CA 4</option>
+                      </select>
+                    </div><b class="field-phone__selected">+1</b>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <label class="mb-8 label">Time zone</label>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a time zone…</option>
+                      <option value="2">Choose a time zone… 2</option>
+                      <option value="3">Choose a time zone… 3</option>
+                      <option value="4">Choose a time zone… 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <label class="mb-8 label">Language</label>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a language…</option>
+                      <option value="2">Choose a language… 2</option>
+                      <option value="3">Choose a language… 3</option>
+                      <option value="4">Choose a language… 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <div class="flex items-center mb-8">
+                    <label class="label">Currency</label><i class="ic-info ml-8 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
+</svg></i>
+                  </div>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Choose a currency…</option>
+                      <option value="2">Choose a currency… 2</option>
+                      <option value="3">Choose a currency… 3</option>
+                      <option value="4">Choose a currency… 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set mb-24">
+                  <div class="flex items-center mb-8">
+                    <label class="label">Invoice prefix</label><i class="ic-info ml-8 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
+</svg></i>
+                  </div>
+                  <input class="field" type="text">
+                </div>
+                <div class="field-set mb-24">
+                  <div class="flex items-center mb-8">
+                    <label class="label">Next invoice sequence</label><i class="ic-info ml-8 mt-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<path d="M139 23c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-8c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4h8zm-3.355 6.968h-2.064c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h.387v2.065h-.387c-.214 0-.387.173-.387.387v.774c0 .214.173.387.387.387h2.838c.214 0 .387-.173.387-.387v-.774c0-.214-.173-.387-.387-.387h-.387v-3.226c0-.214-.173-.387-.387-.387zm-.645-3.42c-.748 0-1.355.607-1.355 1.355s.607 1.355 1.355 1.355 1.355-.607 1.355-1.355-.607-1.355-1.355-1.355z" transform="translate(-800 -552) translate(310 326) translate(363 203)"/>
+</svg></i>
+                  </div>
+                  <input class="field" type="text" value="1">
+                </div>
+                <div class="field-set mb-24">
+                  <label class="label mb-8">Tax status</label>
+                  <div class="button mb-16"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                    <select name="choose_country">
+                      <option value="1" selected>Taxable</option>
+                      <option value="2">Exempt</option>
+                      <option value="3">Reverse charge</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-set">
+                  <label class="label mb-8">Tax ID</label>
+                  <div class="field-col-3 mb-8">
+                    <div class="button"><i class="ic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+<g stroke-width="1.5">
+<path d="M0 4L3.5 0 7 4" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5)"/>
+<path d="M0 11L3.5 7 7 11" transform="translate(-1110 -221) translate(887 122) translate(10 93) translate(214.5 7.5) matrix(1 0 0 -1 0 18)"/>
+</g>
+</g>
+</svg></i>
+                      <select name="choose_country">
+                        <option value="1" selected>ID type</option>
+                        <option value="2">ID type 2</option>
+                        <option value="3">ID type 3</option>
+                      </select>
+                    </div>
+                    <input class="field" type="text">
+                    <button type="button">
+                      <div class="ic-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
+<g fill="none" fill-rule="evenodd" stroke-linecap="round">
+<g stroke-width="1.5">
+<path d="M4.596 -1.404L4.596 10.596" transform="translate(-1385 -111) translate(290 74) translate(1096 38) rotate(-45 4.596 4.596)"/>
+<path d="M4.596 -1.404L4.596 10.596" transform="translate(-1385 -111) translate(290 74) translate(1096 38) rotate(-135 4.596 4.596)"/>
+</g>
+</g>
+</svg>
+                      </div>
+                    </button>
+                  </div><a href="#">Add another ID </a>
                 </div>
               </div>
             </div>
